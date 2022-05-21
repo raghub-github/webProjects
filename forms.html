@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Forms in HTML</h2>
+    <form action="backend.php">
+        <!-- label is used for click to select -->
+        <div>
+            <label for="name"> Name: </label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="Roll"> Roll: </label>
+            <input type="text" name="myRoll" id="Roll">
+        </div>
+        <br>
+        <div>
+            <label for="Email"> Email: </label>
+            <input type="email" name="myEmail" id="Email">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            <label for="myEligibility"> Are you eligible:</label>
+            <input type="checkbox" name="myEligibility" id="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="myText" cols="30" rows="10"></textarea>>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other: <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <label for="country"> country: </label>
+        <select name="myCountry" id="country">
+            <option value="India" selected>India</option>
+            <option value="USA">USA</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Pakisthan">Pakisthan</option>
+            <option value="England">England</option>
+            <option value="China">China</option>
+        </select>
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="reset now">
+        </div>
+    </form>
+</body>
+
+</html>
