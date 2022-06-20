@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities in HTML</title>
+</head>
+
+<body>
+    <div class="myClass">
+        <p>
+            This is a paragraph
+        </p>
+    </div>
+    <div class="myClass">
+        <p>
+            This is a another paragraph
+            <!-- more then one space will be not print in html without using entities -->
+            This is a another &nbsp; paragraph
+            <!-- &nbsp; is used for print one more unit of space between two word -->
+        </p>
+        <p>Paragraph is show like this &lt;p&gt;</p>
+        <!-- we cannot print <p> this reserved cheracter as normal without using Entities -->
+        <p>Doller is written like this &dollar;
+            pound is written like this &pound;
+            copyRight is Written like this &copy;
+            Empty Character is written like this &#8203;
+            <!-- All reserved key word written using Entities -->
+        </p>
+    </div>
+</body>
+
+</html>
