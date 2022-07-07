@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment in HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Splash', cursive;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(225, 136, 12);
+            margin: 35px auto;
+            background-color: aqua;
+        }
+
+        .item {
+            border: 3px solid rgb(243, 1, 81);
+            margin: 15px 5px;
+            padding: 15px 5px;
+            background: rgb(253, 183, 183);
+        }
+
+        #fruits {
+            float: right;
+            /* clear: both ; */
+            width: 48%;
+        }
+
+        #computers {
+            float: left;
+            /* clear: both; */
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            clear: both;
+            /* width: 100%; */
+        }
+
+        h3 {
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <div id="fruitsPara" class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos perferendis aliquid saepe facere
+                    deleniti alias ut velit ex sint veritatis officia eius, odio facilis at earum nihil voluptates
+                    deserunt.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium repellendus cumque, totam ipsa
+                    sapiente odio voluptatibus veritatis consequatur earum quo?
+                </p>
+            </div>
+        </div>
+
+        <div id="computers" class="item">
+            <h3>computers</h3>
+            <div id="computersPara" class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos perferendis aliquid saepe facere
+                    deleniti alias ut velit ex sint veritatis officia eius, odio facilis at earum nihil voluptates
+                    deserunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis vel suscipit doloribus
+                    delectus
+                    quis labore similique earum dolor iusto.
+                </p>
+            </div>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <div id="stationaryPara" class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos perferendis aliquid saepe facere
+                    deleniti alias ut velit ex sint veritatis officia eius, odio facilis at earum nihil voluptates
+                    deserunt.
+                </p>
+            </div>
+        </div>
+
+        <div id="cyber_cafe" class="item">
+            <h3>cyber_cafe</h3>
+            <div id="cyber_cafePara" class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos perferendis aliquid saepe facere
+                    deleniti alias ut velit ex sint veritatis officia eius, odio facilis at earum nihil voluptates
+                    deserunt.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
