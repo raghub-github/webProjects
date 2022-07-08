@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 30px;
+            margin: 30px auto;
+            width: 700px;
+        }
+
+        .btn {
+            background-color: rgb(153, 218, 12);
+            border: none;
+            padding: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            /* a:hover means --> What happen when cursor is on the button*/
+            color: red;
+        }
+
+        a:visited {
+            /* if we visited the link by clicking this button then it's style proparty will be changed as we want */
+            background-color: rgb(168, 142, 252);
+        }
+
+        a:active {
+            background-color: rgb(255, 0, 51);
+        }
+        #id1:hover{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="item1">
+        <h3>This is my Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste minima eligendi rem numquam temporibus fuga
+            iure sequi harum eos debitis quis consequuntur facere maxime, laboriosam, veritatis, provident quas! Enim
+            facilis repudiandae magnam ullam qui.</p>
+        <a href="https://YAHOO.com" class="btn">Read more</a>
+        <button class="btn" id="id1">contact us</button>
+    </div>
+</body>
+
+</html>
