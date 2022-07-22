@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in HTML</title>
+    <style>
+        /* CSS Positions: static(Default), absolute, relative, fixed, sticky */
+        .container {
+            height: 1500px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: antiquewhite;
+        }
+
+        .Box {
+            display: inline-block;
+            border: 2px solid red;
+            margin: 2px;
+            width: 150px;
+            height: 150px;
+        }
+
+        #box3 {
+            /* position: relative is It's normal position and will leave a gap at it's normal position*/
+            /* position: relative;
+            top: 34px;
+            left: 34px; */
+
+            /* position: absolute; relative to it's parent */
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+            /* position: fixed; When we scroll the page box3 will not change it's position */
+            /* position: fixed;
+            right: 4px; */
+
+            /* position: sticky will fixed the box on top position, when we scroll thed page box will sticky on the top */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Box" id="box1">Box1</div>
+        <div class="Box" id="box2">Box2</div>
+        <div class="Box" id="box3">Chat with me</div>
+        <div class="Box" id="box4">Box4</div>
+    </div>
+</body>
+
+</html>
