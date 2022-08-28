@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/random/2000X10/?india') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            ;
+        }
+
+        section {
+            font-family: "Sofia", sans-serif;
+            font-size: 18px;
+            margin: 2px 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        section::before {
+            content: "This is a contant";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navber">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quia voluptatem illo odit libero illum
+            esse modi? Adipisci nisi, molestias fugit eaque officiis velit sit saepe consequuntur quod soluta
+            deserunt, cum aliquid voluptatum numquam!</p>
+    </section>
+    <hr>
+</body>
+
+</html>
