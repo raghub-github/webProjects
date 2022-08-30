@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 15px;
+            margin: 23px 12px;
+            /* border: 2px solid yellow; */
+            background-color: aquamarine;
+            /* syntex of box-shadow
+            box-shadow: offset-x offset-y color;
+            box-shadow: offset-x offset-y blur-radius color;
+            box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 10px 10px black; */
+            box-shadow: -10px -10px black;  /* it can be negative value*/
+            box-shadow: 10px 10px 8px rgb(113, 117, 11);  /* Here 3rd value is for blur redious*/
+            box-shadow: 10px 10px 8px rgba(113, 117, 11,0.8);  /*a value is for how much need to dark the color*/
+            /* box-shadow: inset -10px -10px black; shadow for inside the box  */
+        }
+        div h4{
+            font-size: 50px;
+            text-align: center;
+            color: rgb(44, 49, 20);
+            text-shadow: 2px 2px 7px rgb(18, 224, 224);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio neque, suscipit ea dolorem laboriosam impedit consequuntur saepe magnam sunt error nisi perspiciatis a qui sed voluptate ducimus commodi quidem quae sit odio placeat? Omnis?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is java Titorial</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed excepturi consequatur laboriosam voluptates nisi rerum natus possimus quibusdam corrupti dolorum. Voluptates eaque fugiat eveniet quibusdam vitae, nihil vel in eius voluptatem! Cum, sed alias?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is HTML course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sequi officiis nisi veritatis architecto odit vel at incidunt, exercitationem porro ea aperiam voluptas aut totam ipsa non perspiciatis quaerat. Corporis voluptatem nobis nostrum odio!</p>
+        </div>
+    </div>
+    <div>
+        <h4>HTML:5</h4>
+    </div>
+</body>
+</html>
