@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animation</title>
+</head>
+<style>
+    .container{
+
+        background-color: bisque;
+    }
+    .box{
+        background-color: yellowgreen;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: ani; */
+        animation-duration: 5s;
+        /* animation-iteration-count: 2; */
+        /* animation-iteration-count: infinite; */
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out; */
+        animation-name: ani1;
+        /* syntex for animation  */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        animation: anny 5s ease-in 1s backwards;
+
+    }
+    @keyframes ani1{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        50%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+    }
+    @keyframes ani{
+        from{
+            width: 200px;
+        }
+        to{
+            width: 1400px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This a box
+        </div>
+    </div>
+</body>
+</html>
