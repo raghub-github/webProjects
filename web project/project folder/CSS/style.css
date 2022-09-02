@@ -1,0 +1,156 @@
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS variable */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar: Logo and image */
+#logo{
+    margin: 10px 10px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 10px 10px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* justify-content: center; */
+}
+
+#navbar::before {
+    content: ""; 
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex; 
+}
+
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 416px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: ""; 
+    background: url(../food.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+/* Service section */
+#services{
+    margin: 20px;
+    display: flex;
+    height: 423px;
+}
+
+#services .box{
+    border: 2px solid rgb(255, 82, 82);
+    padding: 0px;
+    margin: -15px 7px;
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    background: #f2f2f2;
+    align-items: center;
+}
+
+#services .box img{
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: "Sofia", sans-serif;
+}
+
+.h-secondery{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: "Sofia", sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Sofia", sans-serif;
+}
+.center{
+    margin: 30px;
+    text-align: center;
+}
+
