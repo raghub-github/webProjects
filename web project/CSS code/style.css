@@ -68,7 +68,7 @@
 #home {
     display: flex;
     flex-direction: column;
-    height: 446px;
+    height: 440px;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
@@ -101,9 +101,9 @@
 
 /* Service section */
 #services {
-    margin: 20px;
+    margin-left: auto;
     display: flex;
-    height: 423px;
+    height: auto;
 }
 
 #services-container h1 {
@@ -113,7 +113,7 @@
 #services .box {
     border: 2px solid rgb(255, 82, 82);
     padding: 0px;
-    margin: -15px 7px;
+    margin: -15px 25px;
     height: auto;
     width: auto;
     border-radius: 30px;
