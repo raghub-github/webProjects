@@ -1,7 +1,11 @@
 /* CSS reset */
 * {
     margin: 0px;
+    margin-top: 5px;
     padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /* CSS variable */
@@ -11,19 +15,19 @@
 
 /* Navigation Bar: Logo and image */
 #logo {
-    margin: 10px 10px;
+    margin: 0px 10px;
 }
 
 #logo img {
     height: 50px;
-    margin: 10px 10px;
+    margin: 0px 20px;
 }
 
 /* Navigation bar */
 #navbar {
     display: flex;
-    align-items: center;
-    position: relative;
+    /* align-items: center; */
+    position: sticky;
     top: 0px;
     /* justify-content: center; */
 }
@@ -68,7 +72,7 @@
 #home {
     display: flex;
     flex-direction: column;
-    height: 440px;
+    height: 458px;
     padding: 3px 200px;
     justify-content: center;
     align-items: center;
@@ -132,10 +136,12 @@
 
 /* Client section */
 #client-section {
-    height: 250px;
     position: relative;
     margin-top: 50px;
 }
+/* #client-section .h-parimary center{
+    margin-top: 20px;
+} */
 
 #client-section::before {
     content: "";
@@ -158,7 +164,7 @@
 }
 
 .client-item {
-    padding: 25px;
+    padding: 30px;
 }
 
 /* Footer Section */
