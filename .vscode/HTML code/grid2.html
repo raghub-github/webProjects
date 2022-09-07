@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+.grid{
+display: grid;
+grid-template-rows: 1fr 1fr 4fr;  /* First three row will be changed and others remains default*/
+grid-auto-rows: 2fr;
+grid-template-columns: repeat(8, 2fr);
+/* grid-gap: 10px; */
+row-gap: 10px;
+column-gap: 10px;
+}
+.box{
+    background-color: rgb(0, 255, 68);
+    border: 2px solid rgb(0, 0, 0);
+}
+</style>
+<body>
+    <div class="grid">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+    </div>
+</body>
+</html>
