@@ -185,6 +185,16 @@ footer {
     padding-bottom: 34px;
 }
 
+#contact-box button {
+    background-color: green;
+    border:2px solid rgb(238, 255, 0);
+    cursor: pointer;
+}
+#contact-box button:hover {
+    background-color: aqua;
+    color: black;
+}
+
 #contact-box form {
     width: 40%;
 }
