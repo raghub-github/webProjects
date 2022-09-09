@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts using grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:'navbar navbar navbar navbar' 'section section section aside' 'footer footer footer footer';
+    }
+    .Item{
+        background-color: rgb(185, 248, 255);
+        border: 2px solid black;
+        padding: 10px 20px;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="Item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="Item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam molestias rem quis, amet ratione hic ipsa similique maiores nesciunt, sunt unde, culpa earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores itaque nobis non eum rem sed culpa ad quasi fugiat, quis autem harum impedit fuga! Voluptatibus ipsa eius quisquam autem delectus beatae porro. Autem doloribus aspernatur inventore ullam quis, consequuntur facere non quasi perspiciatis facilis voluptatem vero maxime reiciendis et expedita ea ex ipsum voluptas ut asperiores illum! Repudiandae velit libero vitae, quia repellat beatae? Exercitationem similique earum, dicta qui consequuntur, temporibus porro delectus, quae ex deleniti ipsum omnis tenetur dolor velit. Dolor, esse perferendis vitae repellat, doloribus deleniti consequuntur architecto sunt sint reprehenderit a natus enim. Nostrum ab consectetur provident!</div>
+        <div id="aside" class="Item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad obcaecati ullam nisi corrupti repellat quia nam itaque, et accusantium laborum officia voluptate vitae libero nihil corporis accusamus! Inventore ducimus nostrum sapiente placeat minus recusandae quo nihil animi voluptatem harum velit aliquam voluptatum non ipsa molestiae quisquam repudiandae beatae deserunt, explicabo officia repellat. Ratione voluptates necessitatibus molestiae, error beatae sit delectus ut repudiandae porro atque officiis placeat quos vel libero id saepe dolore dicta hic esse nihil! Reprehenderit ducimus doloremque distinctio. Harum excepturi, repellat eos reiciendis iste perferendis. Ipsum eum voluptate at iure, optio laudantium cumque in incidunt veniam qui.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi molestiae nemo voluptate!</div>
+        <footer class="Item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, atque.</footer>
+        <!-- <div class="Item">Item-1</div>
+        <div class="Item">Item-2</div>
+        <div class="Item">Item-3</div>
+        <div class="Item">Item-4</div>
+        <div class="Item">Item-5</div>
+        <div class="Item">Item-6</div>
+        <div class="Item">Item-7</div>
+        <div class="Item">Item-8</div>
+        <div class="Item">Item-9</div>
+        <div class="Item">Item-10</div>
+        <div class="Item">Item-11</div>
+        <div class="Item">Item-12</div>
+        <div class="Item">Item-13</div>
+        <div class="Item">Item-14</div> -->
+    </div>
+</body>
+</html>
