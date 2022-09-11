@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a Heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, ipsum eaque cum sint minima nemo culpa a iste dolorem labore!</p>
+    </div>
+    <script>
+        var String = "India ";
+        var name = 'Is a ';
+        var message = 'Democratic Country';
+        // console.log(String + name + message);
+        var temp = `${String} is a ${message}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+        console.log("Hello \\n World\n programme"); // For printing \n we need to write \\n in console
+        document.getElementById('content').innerHTML = '<h3>This is an h3 Heading</h3>'
+    </script>
+</body>
+</html>
