@@ -116,15 +116,22 @@ html {
 }
 
 #services .box {
-    border: 2px solid rgb(255, 82, 82);
+    /* border: 2px solid rgb(255, 82, 82); */
     padding: 0px;
     margin: -15px 25px;
     height: auto;
     width: auto;
     border-radius: 30px;
-    background: #f2f2f2;
+    background: #eaeaea;
     align-items: center;
     box-shadow: 15px 15px 10px rgb(116, 105, 105);
+}
+
+#services .box:hover {
+    background-color: #fff0f0;
+    box-shadow: 15px 15px 10px rgb(65, 52, 62);
+    border-radius: 20px;
+
 }
 
 #services .box img {
@@ -166,6 +173,10 @@ html {
     height: 60px;
 }
 
+#clients img:hover {
+    height: 65px;
+}
+
 .client-item {
     padding: 30px;
 }
@@ -187,9 +198,10 @@ footer {
 
 #contact-box button {
     background-color: green;
-    border:2px solid rgb(238, 255, 0);
+    border: 2px solid rgb(238, 255, 0);
     cursor: pointer;
 }
+
 #contact-box button:hover {
     background-color: aqua;
     color: black;
