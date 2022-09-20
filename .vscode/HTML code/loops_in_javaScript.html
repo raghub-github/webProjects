@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>This is about loops</p>
+    </div>
+    <script>
+        console.log("Loops concept");
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+        let frinds = ["Rohan", "Pooja", "Manas", "Chintu"];
+        // for (let index = 0; index < frinds.length; index++) {
+        //     console.log("Hello " +frinds[index]);
+        // }
+
+        // frinds.forEach(function f(element){
+        //     console.log("Hello "+ element);
+        // });
+
+        // for (element of frinds){
+        //         console.log("Hello "+ element);
+        // }
+
+        let employee = {
+            name: "Harry",
+            salary: "10000",
+            state: "west bengal"
+        }
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+    </script>
+</body>
+
+</html>
