@@ -1,0 +1,21 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "Tis is the best package ever built by someone",
+  "main": "npm_install.js",
+  "scripts": {
+    "test": "\\"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "Raghu",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
