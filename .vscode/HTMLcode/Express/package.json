@@ -1,0 +1,14 @@
+{
+  "name": "express_npm",
+  "version": "1.0.0",
+  "description": "This is a package we are created while studing and exploring node and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RK Raghu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
