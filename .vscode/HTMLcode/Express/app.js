@@ -1,12 +1,12 @@
-const expess = require("express");
+const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const app = expess();
+const app = express();
 const port = 80;
 
 //EXPRESS SPECIFIC STUFF
-app.use('/static', expess.static('static')); // for serving static files
-app.use(expess.urlencoded());
+app.use('/static', express.static('static')); // for serving static files
+app.use(express.urlencoded());
 
 //PUG SPECIFIC STUFF
 app.set('view engine', 'pug'); // set the template engine as pug
@@ -25,7 +25,7 @@ app.post('/', (req, res)=>{
     gender = req.body.gender;
     address = req.body.address;
     more = req.body.more;
-    let outputToWrite = 'The name of the client is ${name}, ${age} years old, ${gender}, residing at ${address}. More about him/her : ${more}';
+    let outputToWrite = `The name of the client is ${name}, ${age} years old, ${gender}, residing at ${address}. More about him/her : ${more}`;
     fs.writeFileSync('output.txt', outputToWrite);
     // console.log(req.body);
     const parms = {'massage': 'Your form has been submitted successfully'};
