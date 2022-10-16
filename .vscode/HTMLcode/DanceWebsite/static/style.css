@@ -6,7 +6,7 @@
 }
 #navbar{
     background-color: rgb(121, 0, 0);
-    padding: 13px 14px;
+    padding: 18px 15px;
 }
 
 #navbar ul{
@@ -33,7 +33,7 @@
 
 #introSection{
     background: url("/static/dance.avif") no-repeat center center/cover;
-    height: 300px;
+    height: 600px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,38 @@
     padding: 5px;
 }
 
-#sponcorsSection{
+#missonSection{
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.726);
+    width: 60%;
+    margin: auto;
+}
+
+#missonSection h2{
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 31.5%;
+    margin: 13px 8px;
+    height: 190px;
+    background-color: blanchedalmond;
+    box-shadow: 7px 6px 8px #6c6a6a;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sponcorsSection {
     height: 300px;
     background-color: rgba(164, 93, 0, 0.726);
 }
@@ -58,6 +89,7 @@
     text-align: center;
     padding-top: 15px;
     font-family: "Sofia", sans-serif;
+    font-size: 30px;
 }
 
 #footer{
