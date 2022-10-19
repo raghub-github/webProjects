@@ -4,6 +4,19 @@
     box-sizing: border-box;
     padding: 0px;
 }
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: -7px 65px;
+    font-size: 25px;
+}
+#logo img{
+    height: 50px;
+    filter: invert(1);
+}
+
 #navbar{
     background-color: rgb(121, 0, 0);
     padding: 18px 15px;
@@ -12,7 +25,8 @@
 #navbar ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 #navbar li{
@@ -32,9 +46,10 @@
 }
 
 #introSection{
-    background: url("/static/dance.avif") no-repeat center center/cover;
+    background: url("/static/bg2.avif") no-repeat center center/cover;
+    opacity: 1;
     height: 600px;
-    padding-bottom: 100px;
+    padding-bottom: 375px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,20 +84,43 @@
     border-radius: 10px;
     width: 31.5%;
     margin: 13px 8px;
-    height: 190px;
-    background-color: blanchedalmond;
-    box-shadow: 7px 6px 8px #6c6a6a;
+    height: 205px;
+    background-color: #ceeeff;
+    box-shadow: 7px 6px 8px #23002ae6;
 }
 
 .card h3{
     text-align: center;
     margin: 12px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 130px;
+    padding: 0px 0px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+.card-container{
+    padding: 0px 20px;
+}
+
+.card-container p{
+    font-size: 20px;
 }
 
 #sponcorsSection {
     height: 300px;
-    background-color: rgba(164, 93, 0, 0.726);
+    background-color: rgba(255, 177, 177, 0.726);
 }
 
 #sponcorsSection h2{
@@ -92,9 +130,25 @@
     font-size: 30px;
 }
 
+#sponsor{
+    height: 137px;
+    max-width: 970px;
+    margin: 35px auto;
+
+}
+
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+
 #footer{
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
     background-color: rgb(0, 0, 0);
     color: white;
-
+    font-family: "Sofia", sans-serif;
 }
