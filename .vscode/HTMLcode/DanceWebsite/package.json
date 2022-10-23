@@ -9,8 +9,10 @@
   "author": "Raghu Bhunia",
   "license": "ISC",
   "dependencies": {
+    "body": "^5.1.0",
     "express": "^4.18.2",
     "mongoose": "^6.6.7",
+    "parser": "^0.1.4",
     "pug": "^3.0.2"
   }
 }
