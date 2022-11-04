@@ -1,5 +1,5 @@
 body {
-    height: 120vh;
+    height: 157vh;
     background-image: linear-gradient(rgb(255 145 145 / 52%), rgb(91, 0, 98));
 }
 
@@ -21,7 +21,7 @@ h1 {
     max-width: 978px;
     border: 2px solid black;
     margin: auto;
-    height: 70vh;
+    height: 60vh;
     padding: 22px;
     overflow-y: auto;
     margin-bottom: 14px;
@@ -29,21 +29,27 @@ h1 {
 }
 
 .message {
-    background-color: #d3f6f1;
-    width: 25%;
+    background-color: rgb(6 65 58);
+    width: 45%;
     padding: 10px;
     margin: 17px 12px;
     border-radius: 10px;
+    color: white;
 }
 
 .left {
     float: left;
     clear: both;
+    background-color: rgb(0 89 36 / 91%);
+    color: white;
+    
 }
 
 .right {
     float: right;
     clear: both;
+    background-color: rgb(13, 69, 106);
+    color: white;
 }
 
 #send-container {
@@ -51,20 +57,22 @@ h1 {
     margin: auto;
     text-align: center;
     max-width: 1000px;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .btn {
     margin: 1.5px;
-    width: 8%;
+    width: 12%;
     cursor: pointer;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 6px;
     height: 35px;
     background-color: #00835b;
+    font-size: 12px;
 }
 
 .btn:hover {
