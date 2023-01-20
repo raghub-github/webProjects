@@ -3,8 +3,7 @@ function updateMap() {
     fetch("data.json")
         .then(responce => responce.json())
         .then(rsp => {
-
-            // console.log(rsp.data[11].pincode)
+            // console.log(rsp.data)
 
             submit.addEventListener("click", (e) => {
                 e.preventDefault()
@@ -19,7 +18,7 @@ function updateMap() {
                 let newRsp = rsp.data.filter(function (ele) {
                     return (ele.pincode == newCity) || (ele.city == newCity)
                 })
-                console.log(newRsp)
+                // console.log(newRsp)
 
                 if (newRsp.length > 1) {
                     newText.innerHTML = `Charging stations in ${newCity}`
@@ -27,23 +26,23 @@ function updateMap() {
                     newText.innerHTML = `No data found <hr>`
                 }
                 let imgUrls = [
-                    `im1.png`,
-                    `im2.png`,
-                    `im3.png`,
-                    `im4.png`,
-                    `im5.png`,
-                    `im6.png`,
-                    `im7.png`,
-                    `im8.png`,
-                    `image.png`,
-                    `images.png`,
-                    `walmart.png`,
-                    `img2.png`
+                    `./photos/im1.png`,
+                    `./photos/im2.png`,
+                    `./photos/im3.png`,
+                    `./photos/im4.png`,
+                    `./photos/im5.png`,
+                    `./photos/im6.png`,
+                    `./photos/im7.png`,
+                    `./photos/im8.png`,
+                    `./photos/image.png`,
+                    `./photos/images.png`,
+                    `./photos/walmart.png`,
+                    `./photos/img2.png`
                 ];
                 let randomImg = () => {
                     return imgUrls[Math.floor(Math.random() * imgUrls.length)]
                 }
-                console.log(randomImg());
+                // console.log(randomImg());
 
                 ihtml = ""
                 let bgimg = randomImg();
@@ -54,7 +53,6 @@ function updateMap() {
                         bgimg = randomImg();
                     }
                     c++;
-                    // console.log(newRsp[item])
                     ihtml += `<div class="card mx-2 my-2 shadow p-3 mb-5 bg-white rounded" style="width: 22rem; height: 36rem;">
                     <img src="${bgimg}" class="card-img-top" alt="...">
                     <div class="card-body">
