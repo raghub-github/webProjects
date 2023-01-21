@@ -9,7 +9,7 @@ function updateMap() {
                 e.preventDefault()
                 class upper {
                     capitalize(cityOrPin) {
-                        return cityOrPin.charAt(0).toUpperCase() + cityOrPin.substr(1, cityOrPin.length)
+                        return (cityOrPin.charAt(0).toUpperCase() + cityOrPin.substr(1, cityOrPin.length)).trim()
                     }
                 }
                 let p1 = new upper()
@@ -20,7 +20,7 @@ function updateMap() {
                 })
                 // console.log(newRsp)
 
-                if (newRsp.length > 1) {
+                if (newRsp.length > 0) {
                     newText.innerHTML = `Charging stations in ${newCity}`
                 } else {
                     newText.innerHTML = `No data found <hr>`
@@ -72,8 +72,8 @@ function updateMap() {
             })
 
             rsp.data.forEach(element => {
-                latt = element.lattitude;
-                long = element.longitude;
+                let latt = element.lattitude;
+                let long = element.longitude;
 
                 // Mark on the map
                 new mapboxgl.Marker({
