@@ -3,7 +3,7 @@ function updateMap() {
     fetch("data.json")
         .then(responce => responce.json())
         .then(rsp => {
-            // console.log(rsp.data)
+            console.log(rsp.data)
 
             submit.addEventListener("click", (e) => {
                 e.preventDefault()
@@ -22,6 +22,8 @@ function updateMap() {
 
                 if (newRsp.length > 0) {
                     newText.innerHTML = `Charging stations in ${newCity}`
+                    let ds1 = document.getElementById("ds")
+                    ds1.style.display = "flex"
                 } else {
                     newText.innerHTML = `No data found <hr>`
                 }
@@ -53,7 +55,7 @@ function updateMap() {
                         bgimg = randomImg();
                     }
                     c++;
-                    ihtml += `<div class="card mx-2 my-2 shadow p-3 mb-5 bg-white rounded" style="width: 22rem; height: 36rem;">
+                    ihtml += `<div class="card mx-2 my-2 shadow p-3 mb-5 bg-white rounded" style="width: 22rem; height: 36.2rem;">
                     <img src="${bgimg}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold textStyle">Charging Station Name : ${newRsp[item].name}</h5>

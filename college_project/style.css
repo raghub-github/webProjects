@@ -8,12 +8,12 @@
 }
 
 body {
-    background-color: rgba(168, 206, 177, 0.345);
+    background-color: rgba(159, 193, 167, 0.345);
 }
 
 .form-control1 {
     display: block;
-    width: 350px;
+    width: 300px;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 400;
@@ -31,10 +31,17 @@ body {
 
 .setup-size {
     top: 0px;
-    position: relative;
+    /* position: relative; */
     height: 10%;
     width: 6%;
     margin-right: 10px;
+}
+
+.nav-item:hover {
+    box-sizing: border-box;
+    /*   border: 2px solid #0a7cf5; */
+    border-radius: 8px;
+    background-color: #b2f3d5;
 }
 
 .textLine {
@@ -57,6 +64,6 @@ body {
     height: 100vh;
 }
 
-.textStyle{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.textStyle {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
