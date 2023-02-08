@@ -3,7 +3,7 @@ function updateMap() {
     fetch("data.json")
         .then(responce => responce.json())
         .then(rsp => {
-            console.log(rsp.data)
+            // console.log(rsp.data)
 
             submit.addEventListener("click", (e) => {
                 e.preventDefault()
