@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Courier New', Courier, monospace;
     margin: 0px;
     padding: 0px;
@@ -15,36 +15,38 @@ body::before {
     background: url('/static/pexels.jpeg')no-repeat center center/cover;
 }
 
-nav{
+nav {
     background-color: rgb(28, 0, 0);
     padding: 12px;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: row;
 }
 
-li{
+li {
     list-style: none;
     padding: 3px 15px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-h2{
+h2 {
     text-align: center;
     color: #f8fe00;
 }
 
-.container{
+.container {
     margin: 35px 0px;
 }
 
-input, textarea{
+input,
+textarea {
     display: block;
     padding: 3px;
     margin: 14px auto;
@@ -53,7 +55,8 @@ input, textarea{
     border: 2px solid black;
     border-radius: 7px
 }
-.btn{
+
+.btn {
     margin: 4px auto;
     display: block;
     padding: 5px 12px;
