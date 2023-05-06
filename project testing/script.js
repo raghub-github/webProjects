@@ -97,21 +97,23 @@ function updateMap() {
                   <td><span id="pricing"></span>${newRsp[item].pricing}</td>
                   </tr>`
 
-                  document.getElementById("cont1").style.display = "block"
-
+                    for (item in newRsp) {
+                        if (newRsp.length > 0) {
+                            document.getElementById("cont1").style.display = "block"
+                            document.getElementById("showcdn").style.display = "block"
+                        }
+                    }
                 }
-                
+
                 cardContainer.innerHTML = ihtml
                 tdata.innerHTML = ihtml2
                 city1.innerHTML = `Table view of all charging station in ${newCity}`
             })
 
-            
 
             rsp.data.forEach(element => {
                 let latt = element.lattitude;
                 let long = element.longitude;
-
                 // Mark on the map
                 new mapboxgl.Marker({
                     draggable: false,
