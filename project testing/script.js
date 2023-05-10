@@ -110,10 +110,15 @@ function updateMap() {
                 city1.innerHTML = `Table view of all charging station in ${newCity}`
             })
 
+            // let n = 0;
+            // if(newRsp.length > 0){
+            //     n = n+1
+            //     console.log("hello")
+            // }
 
             rsp.data.forEach(element => {
-                let latt = element.lattitude;
                 let long = element.longitude;
+                let latt = element.lattitude;
                 // Mark on the map
                 new mapboxgl.Marker({
                     draggable: false,
@@ -121,6 +126,105 @@ function updateMap() {
                 }).setLngLat([long, latt])
                     .addTo(map);
             });
+            
+            // switch(n){             
+            //     case(0): {
+            //         rsp.data.forEach(element => {
+            //             let long = element.longitude;
+            //             let latt = element.lattitude;
+            //             // Mark on the map
+            //             new mapboxgl.Marker({
+            //                 draggable: false,
+            //                 color: `green`,
+            //             }).setLngLat([long, latt])
+            //                 .addTo(map);
+            //         });
+            //     }
+            //     break;
+            //     case (1) : {
+            //         newRsp.data.forEach(element => {
+            //             let long = element.longitude;
+            //             let latt = element.lattitude;                  
+            //             var map = new mapboxgl.Map({
+            //                 container: 'map',
+            //                 style: 'mapbox://styles/mapbox/satellite-streets-v12',
+            //                 zoom: 3.6,
+            //                 center: [81, 23]
+            //             });
+                        
+            //             // Mark on the map
+            //             new mapboxgl.Marker({
+            //                 draggable: false,
+            //                 color: `red`,
+            //             }).setLngLat([long, latt])
+            //                 .addTo(map);
+            //         });
+            //     }
+            // }
+
+            // do{
+            //     rsp.data.forEach(element => {
+            //         let long = element.longitude;
+            //         let latt = element.lattitude;
+            //         // Mark on the map
+            //         new mapboxgl.Marker({
+            //             draggable: false,
+            //             color: `green`,
+            //         }).setLngLat([long, latt])
+            //             .addTo(map);
+            //     }); 
+            // }while(rsp.length > 0 && newRsp.length < 0){
+            //     newRsp.data.forEach(element => {
+            //         let long = element.longitude;
+            //         let latt = element.lattitude;                  
+            //         var map = new mapboxgl.Map({
+            //             container: 'map',
+            //             style: 'mapbox://styles/mapbox/satellite-streets-v12',
+            //             zoom: 3.6,
+            //             center: [81, 23]
+            //         });
+                    
+            //         // Mark on the map
+            //         new mapboxgl.Marker({
+            //             draggable: false,
+            //             color: `red`,
+            //         }).setLngLat([long, latt])
+            //             .addTo(map);
+            //     });
+
+            // }
+
+            // if (rsp.length > 0 && newRsp.length < 0) {
+            //     rsp.data.forEach(element => {
+            //         let long = element.longitude;
+            //         let latt = element.lattitude;
+            //         // Mark on the map
+            //         new mapboxgl.Marker({
+            //             draggable: false,
+            //             color: `green`,
+            //         }).setLngLat([long, latt])
+            //             .addTo(map);
+            //     });
+            // }
+            // else if (newRsp.length > 0) {
+            //     newRsp.data.forEach(element => {
+            //         let long = element.longitude;
+            //         let latt = element.lattitude;
+
+            //         new mapboxgl.Map({
+            //             container: 'map',
+            //             style: 'mapbox://styles/mapbox/satellite-streets-v12',
+            //             zoom: 3.6,
+            //             center: [81, 23]
+            //         });
+            //         // Mark on the map
+            //         new mapboxgl.Marker({
+            //             draggable: false,
+            //             color: `red`,
+            //         }).setLngLat([long, latt])
+            //             .addTo(map);
+            //     });
+            // }
         })
 }
 

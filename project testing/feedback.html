@@ -18,6 +18,7 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
         integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style1.css" rel="stylesheet" type="text/css" />
     <title>feedback form</title>
 
     <style>
@@ -27,84 +28,6 @@
             justify-content: center;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-
-        /* .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .toggle-slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-            border-radius: 34px;
-        }
-
-        .toggle-slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-            border-radius: 50%;
-        }
-
-        input:checked+.toggle-slider {
-            background-color: #2196F3;
-        }
-
-        input:checked+.toggle-slider:before {
-            -webkit-transform: translateY(26px);
-            -ms-transform: translateY(26px);
-            transform: translateX(26px);
-        }
-
-        /* three line toggle */
-        /* .toggle {
-            width: 30px;
-            height: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .toggle span {
-            width: 100%;
-            height: 4px;
-            background-color: #000;
-            border-radius: 2px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .toggle.active span:first-child {
-            transform: rotate(45deg) translate(4px, 4px);
-        }
-
-        .toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .toggle.active span:last-child {
-            transform: rotate(-45deg) translate(4px, -4px);
-        } */ 
     </style>
 </head>
 
@@ -122,14 +45,6 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- <div class="toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> -->
-
-
             <div class="collapse navbar-collapse font-weight-bold" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -141,47 +56,62 @@
                             href="index.html">Map-View</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="color: rgb(0, 0, 146); font-weight: bold;" href="index.html"
+                        <div>
+                            <a class="nav-link active" id="showcdn"
+                                style=" display: none; color: rgb(0, 0, 146); font-weight: bold;"
+                                href="index.html">Table
+                                view</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: rgb(0, 0, 146); font-weight: bold;" href="#ft"
                             tabindex="-1" aria-disabled="true">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="color: rgb(0, 0, 146); font-weight: bold;"
-                            href="feedback.html" tabindex="-1" aria-disabled="true">Send feedback</a>
+                        <a class="nav-link active" style="color: rgb(0, 0, 146); font-weight: bold;" href="#"
+                            tabindex="-1" aria-disabled="true">Send feedback</a>
                     </li>
                 </ul>
+                <!-- <form class="d-flex my-2 my-lg-0">
+                    <input id="cityOrPin" class="form-control1  me-2" type="search"
+                        placeholder="Search Station by City Name or PIN Code" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form> -->
             </div>
         </div>
     </nav>
     <div class="card text-center">
         <div class="limitSet"
             style="height: 100%; width: 80%; margin-bottom: 50px; padding: 3%; margin-left: 10%; align-items: center; justify-content: center; background-color: rgb(203, 242, 218)">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" method="post" novalidate>
                 <h3 class="textline">Enter your details here :</h3>
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
-                        <label for="validationTooltip01">First name</label>
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="First name"
-                            value="first name" required>
+                        <label for="validationTooltip01">Full name</label>
+                        <input type="text" name="fulltName" class="form-control" id="validationTooltip01"
+                            placeholder="Full name" value="" required>
                         <div class="valid-tooltip">
                             Looks good!
                         </div>
                     </div>
+
                     <div class="col-md-4 mb-3">
-                        <label for="validationTooltip02">Last name</label>
-                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name"
-                            value="last name" required>
+                        <label for="validationTooltip01">Mobile Number</label>
+                        <input type="number" name="Mobile" class="form-control" id="validationTooltip01"
+                            placeholder="Mobile number" value="Mobile Number" required>
                         <div class="valid-tooltip">
                             Looks good!
                         </div>
                     </div>
+
                     <div class="col-md-4 mb-3">
                         <label for="validationTooltipUsername">Gmail</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
                             </div>
-                            <input type="text" class="form-control" id="validationTooltipUsername" placeholder="gmail"
-                                aria-describedby="validationTooltipUsernamePrepend" required>
+                            <input type="email" class="form-control" name="email" id="validationTooltipUsername"
+                                placeholder="gmail" aria-describedby="validationTooltipUsernamePrepend" required>
                             <div class="invalid-tooltip">
                                 Please choose a unique and valid Gmail.
                             </div>
@@ -364,6 +294,19 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
