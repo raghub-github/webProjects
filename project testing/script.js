@@ -108,6 +108,8 @@ function updateMap() {
                 cardContainer.innerHTML = ihtml
                 tdata.innerHTML = ihtml2
                 city1.innerHTML = `Table view of all charging station in ${newCity}`
+
+
             })
 
             // let n = 0;
@@ -115,6 +117,14 @@ function updateMap() {
             //     n = n+1
             //     console.log("hello")
             // }
+
+            mapboxgl.accessToken = 'pk.eyJ1IjoiaGFycnkxMjM0OTgiLCJhIjoiY2s4OXh1c3BqMGFsZzNvbXA3YmYyaGFhYSJ9.wmVMiMxlSqpzJPsj-UXr3Q';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/satellite-streets-v12',
+                zoom: 3.6,
+                center: [81, 23],
+            });
 
             rsp.data.forEach(element => {
                 let long = element.longitude;
@@ -124,9 +134,11 @@ function updateMap() {
                     draggable: false,
                     color: `green`,
                 }).setLngLat([long, latt])
+                    .setPopup(new mapboxgl.Popup().setHTML(`<h6><div style="background-color:white; color:blue; padding: 5px; display: flex; justify-content: center;
+                    align-items: center;">${element.name} , ${element.state} , ${element.pincode}</div></h6>`)) // add popup
                     .addTo(map);
             });
-            
+
             // switch(n){             
             //     case(0): {
             //         rsp.data.forEach(element => {
@@ -151,7 +163,7 @@ function updateMap() {
             //                 zoom: 3.6,
             //                 center: [81, 23]
             //             });
-                        
+
             //             // Mark on the map
             //             new mapboxgl.Marker({
             //                 draggable: false,
@@ -183,7 +195,7 @@ function updateMap() {
             //             zoom: 3.6,
             //             center: [81, 23]
             //         });
-                    
+
             //         // Mark on the map
             //         new mapboxgl.Marker({
             //             draggable: false,

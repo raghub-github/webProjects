@@ -48,9 +48,12 @@
                         <a class="nav-link active" style="color: rgb(0, 0, 146); font-weight: bold;"
                             href="#cont">Map-View</a>
                     </li>
-                    <li class="nav-item"><div>
-                        <a class="nav-link active" id="showcdn" style=" display: none; color: rgb(0, 0, 146); font-weight: bold;"
-                            href="#cont1">Table view</a></div>
+                    <li class="nav-item">
+                        <div>
+                            <a class="nav-link active" id="showcdn"
+                                style=" display: none; color: rgb(0, 0, 146); font-weight: bold;" href="#cont1">Table
+                                view</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" style="color: rgb(0, 0, 146); font-weight: bold;" href="#ft"
@@ -61,7 +64,7 @@
                             href="feedback.html" tabindex="-1" aria-disabled="true">Send feedback</a>
                     </li>
                 </ul>
-                <form  class="d-flex my-2 my-lg-0">
+                <form class="d-flex my-2 my-lg-0">
                     <input id="cityOrPin" class="form-control1  me-2" type="search"
                         placeholder="Search Station by City Name or PIN Code" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
@@ -152,7 +155,8 @@
                 Station In Map
             </h1>
             <div class="new-map">
-                <div id='map'></div>
+                <div id='map' class='map-popups'></div>
+                <div id='info' class='info'></div>
             </div>
             <hr class="my-4">
         </div>
@@ -163,7 +167,7 @@
                     style="font-weight: bold; color: #0082ca; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
                     role="status" id="city1"></div>
             </h1>
-            
+
             <div class="table-responsive">
                 <table class="table text-center">
                     <thead>
@@ -288,15 +292,6 @@
     <!-- End of .container -->
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
-    <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiaGFycnkxMjM0OTgiLCJhIjoiY2s4OXh1c3BqMGFsZzNvbXA3YmYyaGFhYSJ9.wmVMiMxlSqpzJPsj-UXr3Q';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/satellite-streets-v12',
-            zoom: 3.6,
-            center: [81, 23]
-        });
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
