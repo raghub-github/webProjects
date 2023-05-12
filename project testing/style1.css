@@ -13,5 +13,21 @@
 
     .text-primary {
         display: none;
-    } 
+    }
+
+    #commonStation {
+        font-size: 1.7rem !important;
+    }
+    .ulid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ulid1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }

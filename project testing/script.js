@@ -4,7 +4,6 @@ function updateMap() {
         .then(responce => responce.json())
         .then(rsp => {
             // console.log(rsp.data)
-
             submit.addEventListener("click", (e) => {
                 e.preventDefault()
                 class upper {
@@ -134,8 +133,8 @@ function updateMap() {
                     draggable: false,
                     color: `green`,
                 }).setLngLat([long, latt])
-                    .setPopup(new mapboxgl.Popup().setHTML(`<h6><div style="background-color:white; color:blue; padding: 5px; display: flex; justify-content: center;
-                    align-items: center;">${element.name} , ${element.state} , ${element.pincode}</div></h6>`)) // add popup
+                    .setPopup(new mapboxgl.Popup().setHTML(`<h7><div style="background-color:white; color:blue; font-weight:bold; padding: 5px; display: flex; justify-content: center;
+                    align-items: center; flex-direction: column"><div>${element.name}</div> <div>${element.city}, ${element.state},  ${element.pincode}</div></div></h7>`)) // add popup
                     .addTo(map);
             });
 
