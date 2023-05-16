@@ -2,19 +2,15 @@
     .textLine {
         font-size: 2%;
     }
-
     .setup-size {
         display: none;
     }
-
     .text-success {
         display: none;
     }
-
     .text-primary {
         display: none;
     }
-
     #commonStation {
         font-size: 1.7rem !important;
     }
