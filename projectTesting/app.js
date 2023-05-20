@@ -6,7 +6,17 @@ const bodyparser = require("body-parser");
 const port = process.env.PORT || 3000;
 
 const { default: mongoose } = require("mongoose");
-require("./db/conn.js");
+// require("./db/conn.js");
+// const { default: mongoose } = require("mongoose");
+// const mongoose1 = require(mongoose);
+mongoose.connect("mongodb://localhost:27017/userdata", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log(`Connection successful`);
+}).catch((err) => {
+    console.log(`no connection`);
+});
 
 // const mongoose = require("mongoose");
 const feedbackSchema = new mongoose.Schema({
@@ -31,8 +41,10 @@ const feedback = new mongoose.model("feedback", feedbackSchema);
 // var http = require('http');
 // var fs = require('fs');
 
-const static_path = path.join(__dirname, "./public");
+const static_path = path.join(__dirname, "./views");
 app.use(express.static(static_path));
+// app.set('views', __dirname + '/views'); // general config
+// app.set('view engine', 'html');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -57,14 +69,22 @@ app.get('/feedback', (req, res) => {
     res.status(200).render('feedback.html', parms);
 });
 
-app.post('/feedback', (req, res) => {
-    var myData = new feedback(req.body);
-    myData.save().then(() => {
+app.post('/feedback', async (req, res) => {
+    try {
+        const myData = new feedback(req.body);
+        await myData.save();
         res.send("Data saved successfully to the database");
-    }).catch(() => {
-        res.status(400).render("Ohh!, Data is not saved to the database");
-    });
-    // res.status(200).render('./views');
+    } catch (error) {
+        res.status(500).send(error);
+    }
+
+    // var myData = new feedback(req.body);
+    // myData.save().then(() => {
+    //     res.send("Data saved successfully to the database");
+    //     res.status(201).render("index");
+    // }).catch(() => {
+    //     res.status(400).render("Ohh!, Data is not saved to the database");
+    // });
 });
 
 // app.get("/", (req, res) => {
