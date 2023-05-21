@@ -20,14 +20,14 @@ const getWeather = (city) => {
             humidity.innerHTML = response.current.humidity
             humidity2.innerHTML = response.current.humidity
             f_temp.innerHTML = response.current.temp_f
-            k_temp.innerHTML = `${Math.round(response.current.temp_c + 273.15)}`
+            k_temp.innerHTML = `${Math.floor(response.current.temp_c + 273.15)}`
             uv.innerHTML = response.current.uv
             wcondition.innerHTML = response.current.condition.text
             wind_speed.innerHTML = response.current.wind_kph
             wind_speed2.innerHTML = response.current.wind_kph
             wind_directions.innerHTML = response.current.wind_dir
             wind_degree.innerHTML = response.current.wind_degree
-            pressure.innerHTML = `${Math.round(response.current.pressure_in * 25.4)}`
+            pressure.innerHTML = `${Math.floor(response.current.pressure_in * 25.4)}`
         })
         .catch(err => console.error(err));
 }
