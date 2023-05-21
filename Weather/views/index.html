@@ -70,71 +70,69 @@
     </nav>
 
     <div class="container">
-        <div  style="justify-content: center;">
-            <h1 class="my-4 text-center">Weather of <span id="cityName"></span></h1>
-            <main>
-                <div class="row1 row-cols-1 row-cols-md-3 mb-3 text-center shadow p-3 mb-5 bg-body rounded">
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                            <div class="card-header py-3 text-white bg-primary border-primary">
-                                <h4 class="my-0 fw-normal">Temperature</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
-                                        class="text-muted fw-light"><span>&#8451;</span></small>
-                                </h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>Temperature <span id="temp"></span><span>°C</span></li>
-                                    <li>Fahrenheit Value <span id="f_temp">°F</span><span>°F</span></li>
-                                    <li>Kelvin value <span id="k_temp"></span><span>K</span></li>
-                                    <li>UV Index <span id="uv"></span></li>
-                                </ul>
-                                <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
-                            </div>
+        <h1 class="my-4 text-center">Weather of <span id="cityName"></span></h1>
+        <main>
+            <div class="row1 row-cols-1 row-cols-md-3 mb-3 text-center shadow p-3 mb-5 bg-body rounded">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Temperature</h4>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                            <div class="card-header py-3 text-white bg-primary border-primary">
-                                <h4 class="my-0 fw-normal">Humidity Info</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small
-                                        class="text-muted fw-light"> %</small>
-                                </h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>Cloud <span id="cloud_pct"></span><span>%</span></li>
-                                    <li>Feels like <span id="feels_like"></span><span>°C</span></li>
-                                    <li>Hmidity <span id="humidity"></span><span>%</span></li>
-                                    <li>Weather condition : <span id="wcondition"></span></li>
-                                </ul>
-                                <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                            <div class="card-header py-3 text-white bg-primary border-primary">
-                                <h4 class="my-0 fw-normal">Wind Info</h4>
-                            </div>
-                            <div class="card-body">
-                                <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
-                                        class="text-muted fw-light"> Km/hr</small>
-                                </h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>Wind speed :<span id="wind_speed"></span><span> Km/hr</span></li>
-                                    <!-- <li>Wind degrees is <span id="wind_degrees"></span></li> -->
-                                    <li>Wind Directions : <span id="wind_directions"></span></li>
-                                    <li>Wind Degree : <span id="wind_degree"></span></li>
-                                    <li>Air Pressure : <span id="pressure"></span><span> mmHg</span></li>
-                                </ul>
-                                <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
-                            </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
+                                    class="text-muted fw-light"><span>&#8451;</span></small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature <span id="temp"></span><span>°C</span></li>
+                                <li>Fahrenheit Value <span id="f_temp">°F</span><span>°F</span></li>
+                                <li>Kelvin value <span id="k_temp"></span><span>K</span></li>
+                                <li>UV Index <span id="uv"></span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
                         </div>
                     </div>
                 </div>
-            </main>
-        </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Humidity Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small
+                                    class="text-muted fw-light"> %</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Cloud <span id="cloud_pct"></span><span>%</span></li>
+                                <li>Feels like <span id="feels_like"></span><span>°C</span></li>
+                                <li>Hmidity <span id="humidity"></span><span>%</span></li>
+                                <li>Weather condition : <span id="wcondition"></span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Wind Info</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                    class="text-muted fw-light"> Km/hr</small>
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind speed :<span id="wind_speed"></span><span> Km/hr</span></li>
+                                <!-- <li>Wind degrees is <span id="wind_degrees"></span></li> -->
+                                <li>Wind Directions : <span id="wind_directions"></span></li>
+                                <li>Wind Degree : <span id="wind_degree"></span></li>
+                                <li>Air Pressure : <span id="pressure"></span><span> mmHg</span></li>
+                            </ul>
+                            <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <h2 class="display-6 text-center mb-4">Weather Of Other Common Places</h2>
 
