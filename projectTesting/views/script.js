@@ -24,7 +24,7 @@ function updateMap() {
                     newText.innerHTML = `<div class="card">
                     <div class="card-body">
                         <div>
-                        <div class="display-5 font-weight-bold text-center textLine" style="font-size: 40px; id=" commonStation">
+                        <div class="display-5 font-weight-bold text-center textLine" style="font-size: 35px; id=" commonStation">
                             <img src="../photos/Z.png" class="img-fluid setup-size" alt="Responsive image">
                             Charging stations in ${newCity} ⠀
                             <div class="spinner-grow text-success" role="status">
@@ -35,6 +35,14 @@ function updateMap() {
                     </div>`
                     let ds1 = document.getElementById("ds")
                     ds1.style.display = "flex"
+                    let nv = document.getElementById("notVisible1")
+                    nv.style.display = `none`;
+                    let nv1 = document.getElementById("notVisible2")
+                    nv1.style.display = `none`;
+                    let nv2 = document.getElementById("notVisible3")
+                    nv2.style.display = `none`;
+                    let nv3 = document.getElementById("notVisible4")
+                    nv3.style.display = `none`;
 
 
                 } else if (newCity.length <= 0) {
@@ -96,7 +104,7 @@ function updateMap() {
                   <td><span id="pricing"></span>${newResponse[item].pricing}</td>
                   </tr>`
 
-                    for (item in nenewResponsewRsp) {
+                    for (item in newResponse) {
                         if (newResponse.length > 0) {
                             document.getElementById("cont1").style.display = "block"
                             document.getElementById("showcdn").style.display = "block"
