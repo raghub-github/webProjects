@@ -33,7 +33,14 @@ const getWeather = (city) => {
 }
 submit.addEventListener("click", (e) => {
     e.preventDefault()
-    getWeather(city.value)
+    class upper {
+        capitalize(cityOrPin) {
+            return (cityOrPin.charAt(0).toUpperCase() + cityOrPin.substr(1, cityOrPin.length)).trim()
+        }
+    }
+    let p1 = new upper()
+    let newCity = p1.capitalize(city.value)
+    getWeather(newCity)
 })
 getWeather("Kolkata");
 

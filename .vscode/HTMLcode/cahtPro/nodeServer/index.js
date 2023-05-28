@@ -1,7 +1,8 @@
 // Node server which will handle socket io connections
-
+// const io = require('socket.io')(8001);
 // const {Socket} = require('socket.io');
-const io = require('socket.io')(8001, {
+const io = require('socket.io')(8000,
+     {
     cors: {
         origin: '*',
     }

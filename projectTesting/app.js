@@ -15,7 +15,7 @@ mongoose.connect("mongodb://localhost:27017/userdata", {
 }).then(() => {
     console.log(`Connection successful`);
 }).catch((err) => {
-    console.log(`no connection`);
+    console.log(`no connection`, err);
 });
 
 // const mongoose = require("mongoose");
