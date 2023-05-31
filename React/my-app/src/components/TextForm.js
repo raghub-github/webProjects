@@ -25,6 +25,11 @@ export default function TextForm(props) {
     text.select();
     navigator.clipboard.writeText(text.value);
   };
+  const handleExtraSpaceClick = (e) => {
+    e.preventDefault();
+    let newText = text.split(/[ ]+/);
+    setText(newText.join(" "));
+  };
   const handleOnChange = (e) => {
     e.preventDefault();
     console.log("State Changed");
@@ -56,6 +61,9 @@ export default function TextForm(props) {
         </button>
         <button className="btn btn-primary m-4" onClick={handleCopyClick}>
           Copy Text
+        </button>
+        <button className="btn btn-primary m-4" onClick={handleExtraSpaceClick}>
+          Remove Extra Space
         </button>
       </div>
       <div className="App container my-3">
