@@ -3,24 +3,28 @@ import PropTypes from "prop-types";
 
 export default function TextForm(props) {
   const [text, setText] = useState("");
-
   const handleUpClick = (e) => {
     e.preventDefault();
-    // console.log("UpperCase Button Clicked");
     let newText = text.toUpperCase();
     setText(newText);
   };
   const handleLoClick = (e) => {
     e.preventDefault();
-    // console.log("UpperCase Button Clicked");
     let newText = text.toLowerCase();
     setText(newText);
   };
   const handleClearClick = (e) => {
     e.preventDefault();
-    // console.log("UpperCase Button Clicked");
     let newText = "";
     setText(newText);
+  };
+  const handleCopyClick = (e) => {
+    e.preventDefault();
+    alert("text copyed !");
+    var text = document.getElementById("exampleFormControlTextarea1");
+    text.select();
+    text.setSelectionRange(0, 9999);
+    navigator.clipboard.writeText(text.value);
   };
   const handleOnChange = (e) => {
     e.preventDefault();
@@ -50,6 +54,9 @@ export default function TextForm(props) {
         </button>
         <button className="btn btn-primary m-4" onClick={handleClearClick}>
           Clear Text
+        </button>
+        <button className="btn btn-primary m-4" onClick={handleCopyClick}>
+          Copy Text
         </button>
       </div>
       <div className="App container my-3">
