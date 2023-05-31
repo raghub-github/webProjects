@@ -23,7 +23,6 @@ export default function TextForm(props) {
     alert("text copyed !");
     var text = document.getElementById("exampleFormControlTextarea1");
     text.select();
-    text.setSelectionRange(0, 9999);
     navigator.clipboard.writeText(text.value);
   };
   const handleOnChange = (e) => {
