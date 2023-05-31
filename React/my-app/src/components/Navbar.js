@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
-          React App
+          {props.title}
         </a>
         <button
           className="navbar-toggler"
@@ -30,40 +31,9 @@ export default function Navbar() {
                 Link
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="/"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul className="dropdown-menu">
-                <li>
-                  <a className="dropdown-item" href="/">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/">
-                    Another action
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="/">
-                    Something else here
-                  </a>
-                </li>
-              </ul>
-            </li>
             <li className="nav-item">
               <a className="nav-link disabled" href="/">
-                Disabled
+                {props.aboutReact}
               </a>
             </li>
           </ul>
@@ -83,3 +53,12 @@ export default function Navbar() {
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+  aboutReact: PropTypes.string,
+};
+Navbar.defaultProps = {
+  title: "title set here",
+  aboutReact: "About here",
+};
