@@ -8,16 +8,19 @@ export default function TextForm(props) {
     let newText = text.toUpperCase();
     setText(newText);
   };
+
   const handleLoClick = (e) => {
     e.preventDefault();
     let newText = text.toLowerCase();
     setText(newText);
   };
+
   const handleClearClick = (e) => {
     e.preventDefault();
     let newText = "";
     setText(newText);
   };
+
   const handleCopyClick = (e) => {
     e.preventDefault();
     alert("text copyed !");
@@ -25,11 +28,13 @@ export default function TextForm(props) {
     text.select();
     navigator.clipboard.writeText(text.value);
   };
+
   const handleExtraSpaceClick = (e) => {
     e.preventDefault();
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
   };
+
   const handleOnChange = (e) => {
     e.preventDefault();
     console.log("State Changed");
