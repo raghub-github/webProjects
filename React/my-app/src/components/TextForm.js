@@ -41,6 +41,19 @@ export default function TextForm(props) {
     setText(e.target.value);
   };
 
+  // const download = (filename, text) => {
+  //   var element = document.createElement("a");
+  //   element.setAttribute(
+  //     "href",
+  //     "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  //   );
+  //   element.setAttribute("download", filename);
+  //   element.style.display = "none";
+  //   document.body.appendChild(element);
+  //   element.click();
+  //   document.body.removeChild(element);
+  // };
+
   return (
     <>
       <div className="App container">
@@ -70,15 +83,19 @@ export default function TextForm(props) {
         <button className="btn btn-primary m-4" onClick={handleExtraSpaceClick}>
           Remove Extra Space
         </button>
+        {/* <button className="btn btn-primary m-4" onClick={download("data", {text})}>
+          Dounload text
+        </button> */}
       </div>
-      <div className="App container my-3">
+
+      <div className="App container my-3 colorIS">
         <h2>Your Text Summary</h2>
         <p>
           {text.split(" ").length} Words and {text.length} Charecters
         </p>
         <p>Aprox {0.008 * text.split(" ").length} Minutes Takes to Read</p>
         <h2>Preview</h2>
-        <p>{text}</p>
+        <p>{text.length>0?text:"write something in the text box above to preview it here"}</p>
       </div>
     </>
   );
