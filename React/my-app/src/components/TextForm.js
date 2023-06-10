@@ -7,32 +7,36 @@ export default function TextForm(props) {
     e.preventDefault();
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("converted to UpperCase", "success");
   };
 
   const handleLoClick = (e) => {
     e.preventDefault();
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("converted to LowerCase", "success");
   };
 
   const handleClearClick = (e) => {
     e.preventDefault();
     let newText = "";
     setText(newText);
+    props.showAlert("Text cleared", "danger");
   };
 
   const handleCopyClick = (e) => {
     e.preventDefault();
-    alert("text copyed !");
     var text = document.getElementById("exampleFormControlTextarea1");
     text.select();
     navigator.clipboard.writeText(text.value);
+    props.showAlert("Text copied", "success");
   };
-
+  
   const handleExtraSpaceClick = (e) => {
     e.preventDefault();
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+    props.showAlert("Extra space has been removed", "warning");
   };
 
   const handleOnChange = (e) => {
@@ -56,8 +60,8 @@ export default function TextForm(props) {
 
   return (
     <>
-      <div className="App container">
-        <h2>{props.heading}</h2>
+      <div className="App container ">
+        <h2 className="mb-4">{props.heading}</h2>
         <div className="mb-3">
           <textarea
             className="form-control"
