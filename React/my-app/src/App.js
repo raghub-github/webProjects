@@ -9,17 +9,16 @@ import Alert from "./components/Alert";
 function App() {
   const [mode, setMode] = useState("light");
   const [colors, setcolors] = useState("Enable Darkmode");
+  // const [scolor, setScolor] = useState("")
   const [alert, setAlert] = useState(null);
   const showAlert = (message, type) => {
     setAlert({
       msg: message,
       type: type,
     });
-    if (setAlert != null ) {
-      setTimeout(() => {
-        setAlert(null);
-      }, 2000);
-    }
+    setTimeout(() => {
+      setAlert(null);
+    }, 2000);
   };
   const toggleMode = () => {
     if (mode === "light") {
@@ -33,6 +32,7 @@ function App() {
         "exampleFormControlTextarea1"
       ).style.backgroundColor = "#000110";
       showAlert("Dark mood has been enabled", "success");
+      document.title = `React - Dark Mood`;
     } else {
       setMode("light");
       setcolors("Enable Darkmode");
@@ -44,6 +44,7 @@ function App() {
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
       showAlert("Light mood has been enabled", "success");
+      document.title = `React - Light Mood`;
     }
   };
   return (
@@ -52,6 +53,7 @@ function App() {
         title="React"
         mode={mode}
         colors={colors}
+        // scolor={scolor}
         toggleMode={toggleMode}
         aboutReact="React.js"
       />

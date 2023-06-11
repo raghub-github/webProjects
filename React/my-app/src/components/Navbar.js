@@ -41,7 +41,11 @@ export default function Navbar(props) {
               </a>
             </li>
           </ul>
-
+          <div className="color bg-success mr-2" style={{width: "20px", height:"20px", borderRadius:"50%"}}></div>
+          <div className="color bg-warning mr-2" style={{width: "20px", height:"20px", borderRadius:"50%"}}></div>
+          <div className="color bg-danger mr-2" style={{width: "20px", height:"20px", borderRadius:"50%"}}></div>
+          <div className="color bg-secondary mr-2" style={{width: "20px", height:"20px", borderRadius:"50%"}}></div>
+          <div className="color bg-info mr-5" style={{width: "20px", height:"20px", borderRadius:"50%"}}></div>
           <div
             className={`form-check form-switch text-${
               props.mode === "light" ? "dark" : "light"
@@ -60,6 +64,7 @@ export default function Navbar(props) {
               {props.colors}
             </label>
           </div>
+         
           {/* <form className="d-flex" role="search">
             <input
               className="form-control me-2"
