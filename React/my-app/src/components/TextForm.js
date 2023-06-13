@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
+
 export default function TextForm(props) {
   const [text, setText] = useState("");
   const handleUpClick = (e) => {
@@ -72,19 +73,19 @@ export default function TextForm(props) {
             onChange={handleOnChange}
           ></textarea>
         </div>
-        <button className="btn btn-primary m-4" onClick={handleUpClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>
           Convert To UpperCase
         </button>
-        <button className="btn btn-primary m-4" onClick={handleLoClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick}>
           Convert To LowerCase
         </button>
-        <button className="btn btn-primary m-4" onClick={handleClearClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleClearClick}>
           Clear Text
         </button>
-        <button className="btn btn-primary m-4" onClick={handleCopyClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleCopyClick}>
           Copy Text
         </button>
-        <button className="btn btn-primary m-4" onClick={handleExtraSpaceClick}>
+        <button className="btn btn-primary mx-2 my-2" onClick={handleExtraSpaceClick}>
           Remove Extra Space
         </button>
         {/* <button className="btn btn-primary m-4" onClick={download("data", {text})}>
@@ -95,7 +96,7 @@ export default function TextForm(props) {
       <div className="App container my-3 colorIS">
         <h2>Your Text Summary</h2>
         <p>
-          {text.split(" ").length} Words and {text.length} Charecters
+          {text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} Charecters
         </p>
         <p>Aprox {0.008 * text.split(" ").length} Minutes Takes to Read</p>
         <h2>Preview</h2>
