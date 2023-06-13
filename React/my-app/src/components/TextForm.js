@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-
 export default function TextForm(props) {
+  let myStyle = {
+    color: props.mode === "dark" ? "white" : "#000110",
+    backgroundColor: props.mode === "dark" ? "#000110" : "white",
+  };
   const [text, setText] = useState("");
   const handleUpClick = (e) => {
     e.preventDefault();
@@ -32,7 +35,7 @@ export default function TextForm(props) {
     navigator.clipboard.writeText(text.value);
     props.showAlert("Text copied", "success");
   };
-  
+
   const handleExtraSpaceClick = (e) => {
     e.preventDefault();
     let newText = text.split(/[ ]+/);
@@ -65,6 +68,7 @@ export default function TextForm(props) {
         <h2 className="mb-4">{props.heading}</h2>
         <div className="mb-3">
           <textarea
+            style={myStyle}
             className="form-control"
             id="exampleFormControlTextarea1"
             rows="10"
@@ -73,19 +77,39 @@ export default function TextForm(props) {
             onChange={handleOnChange}
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-2 my-2" onClick={handleUpClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleUpClick}
+        >
           Convert To UpperCase
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleLoClick}
+        >
           Convert To LowerCase
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={handleClearClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleClearClick}
+        >
           Clear Text
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={handleCopyClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleCopyClick}
+        >
           Copy Text
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={handleExtraSpaceClick}>
+        <button
+          disabled={text.length === 0}
+          className="btn btn-primary mx-2 my-2"
+          onClick={handleExtraSpaceClick}
+        >
           Remove Extra Space
         </button>
         {/* <button className="btn btn-primary m-4" onClick={download("data", {text})}>
@@ -96,9 +120,21 @@ export default function TextForm(props) {
       <div className="App container my-3 colorIS">
         <h2>Your Text Summary</h2>
         <p>
-          {text.split(" ").filter((element)=>{return element.length!==0}).length} Words and {text.length} Charecters
+          {
+            text.split(" ").filter((element) => {
+              return element.length !== 0;
+            }).length
+          }{" "}
+          Words and {text.length} Charecters
         </p>
-        <p>Aprox {0.008 * text.split(" ").length} Minutes Takes to Read</p>
+        <p>
+          Aprox{" "}
+          {0.008 *
+            text.split(/\s+/).filter((element) => {
+              return element.length !== 0;
+            }).length}{" "}
+          Minutes Takes to Read
+        </p>
         <h2>Preview</h2>
         <p>
           {text.length > 0

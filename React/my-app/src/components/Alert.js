@@ -6,7 +6,8 @@ function Alert(props) {
     return lower.charAt(0).toUpperCase() + word.slice(1);
   };
   return (
-    props.alert && (
+    <div style={{height:"50px"}}>
+      {props.alert && (
       <div
         className={`alert alert-${props.alert.type} alert-dismissible fade show`}
         role="alert"
@@ -21,7 +22,8 @@ function Alert(props) {
           <span aria-hidden="true">&times;</span>
         </button> */}
       </div>
-    )
+      )}
+    </div>
   );
 }
 

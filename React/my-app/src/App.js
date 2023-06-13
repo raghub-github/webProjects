@@ -27,21 +27,11 @@ function App() {
       setcolors("Enable Lightmode");
       document.body.style.backgroundColor = "#000b0f";
       document.body.style.color = "white";
-      document.getElementById("exampleFormControlTextarea1").style.color =
-        "white";
-      document.getElementById(
-        "exampleFormControlTextarea1"
-      ).style.backgroundColor = "#000110";
       showAlert("Dark mood has been enabled", "success");
       document.title = `React - Dark Mood`;
     } else {
       setMode("light");
       setcolors("Enable Darkmode");
-      document.getElementById("exampleFormControlTextarea1").style.color =
-        "black";
-      document.getElementById(
-        "exampleFormControlTextarea1"
-      ).style.backgroundColor = "white";
       document.body.style.backgroundColor = "white";
       document.body.style.color = "black";
       showAlert("Light mood has been enabled", "success");
@@ -73,7 +63,7 @@ function App() {
                 />
               }
             ></Route>
-            <Route exact path="/About" element={<About />}></Route>
+            <Route exact path="/About" element={<About mode={mode} />}></Route>
           </Routes>
         </div>
       </Router>
