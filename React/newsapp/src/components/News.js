@@ -19,7 +19,7 @@ export class News extends Component {
       console.log("something is not working");
     }
   }
-  
+
   render() {
     return (
       <div className="container my-3 App">
@@ -35,12 +35,13 @@ export class News extends Component {
                   //   WebkitLineClamp: 2,
                   //   overflow: 'hidden',
                   //   textOverflow: 'ellipsis'}}
-                  //   title={element.title}
-                  //   description={element.description}
-                  title={element.title ? element.title.slice(0, 45) : ""}
-                  description={
-                    element.description ? element.description.slice(0, 88) : ""
-                  }
+                  title={element.title}
+                  description={element.description}
+                  className="text-truncate"
+                  //   title={element.title ? element.title.slice(0, 45) : ""}
+                  //   description={
+                  //     element.description ? element.description.slice(0, 88) : ""
+                  //   }
                   imageUrl={element.urlToImage}
                   newsUrl={element.url}
                 />
