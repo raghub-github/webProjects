@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 38,
+    "articles": [
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Steve Almasy,Homero De la Fuente",
+            "title": "Denver Nuggets win first NBA championship title in Game 5 victory over Miami Heat - CNN",
+            "description": "The Denver Nuggets won their first NBA championship Monday night, downing the Miami Heat 94-89 at Ball Arena in Denver to take Game 5 of the NBA Finals.",
+            "url": "https://www.cnn.com/2023/06/12/sport/denver-nuggets-nba-championship-spt-intl/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230613110845-nuggets-nba-finals-team-photo.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-06-13T10:36:00Z",
+            "content": "The Denver Nuggets won their first NBA championship Monday night, downing the Miami Heat 94-89 at Ball Arena in Denver to take Game 5 of the NBA Finals.\r\nTwo-time MVP Nikola Joki led the way for the … [+2866 chars]"
+        },
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Adela Suliman",
+            "title": "Nottingham van attack investigated as major incident by police; 3 killed - The Washington Post",
+            "description": "Nottingham police said three people were found dead in the street and a man was arrested on suspicion of murder. Prime Minister Rishi Sunak called it a “shocking incident.\"",
+            "url": "https://www.washingtonpost.com/world/2023/06/13/nottingham-van-attack/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/I2VC7FAPBKKWJU6XONBMRXWWFU.jpg&w=1440",
+            "publishedAt": "2023-06-13T10:32:36Z",
+            "content": "Comment on this story\r\nComment\r\nLONDON Three people were killed in the central English city of Nottingham on Tuesday, police said, adding that they have detained an unnamed suspect and are treating t… [+1964 chars]"
+        },
+        {
+            "source": {
+                "id": "al-jazeera-english",
+                "name": "Al Jazeera English"
+            },
+            "author": "Al Jazeera",
+            "title": "Multiple injuries reported in Denver shooting - Al Jazeera English",
+            "description": "Police say three of those injured are in critical condition and a suspect was shot and is in custody.",
+            "url": "https://www.aljazeera.com/news/2023/6/13/multiple-injuries-reported-in-denver-shooting",
+            "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2023/06/AP23164387210339-1686653729.jpg?resize=1920%2C1440",
+            "publishedAt": "2023-06-13T10:01:25Z",
+            "content": "At least nine people have been wounded in a shooting in Denver, a city in the US state of Colorado.\r\nThe shooting happened about 12:30am (06:30 GMT) on Tuesday, just hours after the Denver Nuggets ba… [+2010 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Yahoo Entertainment"
+            },
+            "author": "John Viljoen",
+            "title": "Stocks Rise as Traders Pin Hopes on Inflation Data: Markets Wrap - Yahoo Finance",
+            "description": "(Bloomberg) -- Stocks gave up some of their advance as traders awaited a crucial US inflation print and assessed the impact of economic stimulus from...",
+            "url": "https://finance.yahoo.com/news/wall-street-momentum-support-asian-222930506.html",
+            "urlToImage": "https://s.yimg.com/ny/api/res/1.2/pkmeqbty5lqXh8AB5onYkQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/bloomberg_markets_842/ab31c63f757716b6ae4d3dc134c5376e",
+            "publishedAt": "2023-06-13T08:55:33Z",
+            "content": "(Bloomberg) -- Stocks gave up some of their advance as traders awaited a crucial US inflation print and assessed the impact of economic stimulus from China.\r\nMost Read from Bloomberg\r\nUS equity bench… [+5520 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Brian Fung",
+            "title": "Thousands of Reddit communities go dark to protest company’s controversial new policy - CNN",
+            "description": "Thousands of Reddit forums are going dark Monday in one of the largest user-driven protests ever to hit the social media platform.",
+            "url": "https://www.cnn.com/2023/06/12/tech/reddit-blackout/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230308164121-reddit-user-stock.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-06-13T08:31:00Z",
+            "content": "Thousands of Reddit forumsare going darkMonday in one of the largest user-driven protests ever to hit the social media platform. \r\nThe voluntary blackouts, which restrict groups content from being pu… [+5594 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+            "author": "Sam Meredith",
+            "title": "Shares of Manchester United pop 30% in premarket trade after Qatar media hints at takeover bid ‘success' - CNBC",
+            "description": "Qatari media suggested Sheikh Jassim bin Hamad al-Thani was likely to be successful with his takeover bid.",
+            "url": "https://www.cnbc.com/2023/06/13/soccer-man-utd-shares-pop-after-qatar-hints-at-takeover-bid-success.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/107196916-1676693580855-gettyimages-109822847-63840101.jpeg?v=1686642006&w=1920&h=1080",
+            "publishedAt": "2023-06-13T07:40:06Z",
+            "content": "Manchester United shares surged 30% in premarket trading on Tuesday, before paring gains, after Qatari media suggested Sheikh Jassim bin Hamad al-Thani was likely to succeed with his takeover bid.\r\nQ… [+1511 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "Russian missile attack kills six in Ukrainian president's hometown - Reuters.com",
+            "description": "At least 10 people were killed in a <a href=\"/world/europe/ceding-ground-ukraine-russia-kills-civilians-apartment-block-strike-2023-06-13/\">Russian missile attack</a> that hit an apartment building and a warehouse in Ukrainian President Volodymyr Zelenskiy's …",
+            "url": "https://www.reuters.com/world/europe/russia-launches-massive-missile-attack-kryvyi-rih-central-ukraine-officials-2023-06-13/",
+            "urlToImage": "https://www.reuters.com/resizer/_LQaq5EB-tVz34osIIiksCIFmGI=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/AW7UR6DDFJMGXCLZO5Z4J2GONI.jpg",
+            "publishedAt": "2023-06-13T07:23:00Z",
+            "content": "KRYVYI RIH, Ukraine, June 13 (Reuters) - At least 10 people were killed in a Russian missile attack that hit an apartment building and a warehouse in Ukrainian President Volodymyr Zelenskiy's hometow… [+2241 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Treat Williams: Everwood and Hair actor dies in road accident - BBC",
+            "description": "The star of Hair and Everwood had over 130 acting credits in career that spanned almost 50 years.",
+            "url": "https://www.bbc.com/news/world-us-canada-65886521",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C5C3/production/_130072605_gettyimages-1181771430.jpg",
+            "publishedAt": "2023-06-13T06:34:25Z",
+            "content": "Actor Treat Williams, who starred in the film musical Hair and the US television series Everwood, has died in a road accident aged 71.\r\nWilliams was thrown from his motorbike in Vermont on Monday aft… [+1727 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Nintendo Life"
+            },
+            "author": "Liam Doolan",
+            "title": "Prince Of Persia: The Lost Crown Will Apparently Run At 60FPS On Switch - Nintendo Life",
+            "description": "Across both handheld and docked",
+            "url": "https://www.nintendolife.com/news/2023/06/prince-of-persia-the-lost-crown-will-apparently-run-at-60fps-on-switch",
+            "urlToImage": "https://images.nintendolife.com/628a7c710d4ac/1280x720.jpg",
+            "publishedAt": "2023-06-13T06:00:00Z",
+            "content": "@Polvasti Yeah, they clearly \"subverted our expectations\" by making a new Prince of Persia game where you don't play at the prince.\r\nMaybe there's a twist and you actually do get to play as the princ… [+402 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "Jamal Murray Reflects on His Road to Becoming an NBA Champion | 2023 NBA Finals - Bleacher Report",
+            "description": "Jamal Murray joined the NBA TV Gametime crew and was emotional talking about his journey from his ACL injury to winning the NBA Finals.Subscribe: https://www...",
+            "url": "https://www.youtube.com/watch?v=jUjrivIwDac",
+            "urlToImage": "https://i.ytimg.com/vi/jUjrivIwDac/maxresdefault.jpg",
+            "publishedAt": "2023-06-13T05:55:50Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Forbes"
+            },
+            "author": "David Axe",
+            "title": "As Losses Pile Up, Ukraine Wants A Lot More Tanks And Fighting Vehicles - Forbes",
+            "description": "Nine days into its 2023 counteroffensive, the Ukrainian army has lost at least four of the 85 Leopard 2 tanks its foreign allies have pledged to the war effort.",
+            "url": "https://www.forbes.com/sites/davidaxe/2023/06/13/as-losses-pile-up-ukraine-needs-a-lot-more-tanks-and-fighting-vehicles/",
+            "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/6487f5cf6c0832ee7c7d5722/0x0.jpg?format=jpg&crop=1255,706,x6,y0,safe&width=1200",
+            "publishedAt": "2023-06-13T04:54:42Z",
+            "content": "Wrecked Ukrainian vehicles outside Mala Tokmachka.\r\nRussian military capture\r\nNine days into its 2023 counteroffensive, the Ukrainian army has lost at least four of the 85 Leopard 2 tanks its foreign… [+4879 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": null,
+            "title": "US FTC asks court to block Microsoft acquisition of Activision - Reuters",
+            "description": "The Federal Trade Commission asked a court to temporarily block Microsoft Corp's <a href=\"https://www.reuters.com/companies/MSFT.O/\"target=\"_blank\">(MSFT.O)</a> acquisition of Activision Blizzard <a href=\"https://www.reuters.com/companies/ATVI.O/\"target=\"_bla…",
+            "url": "https://www.reuters.com/markets/deals/us-ftc-seeks-block-microsofts-acquisition-activision-cnbc-2023-06-12/",
+            "urlToImage": "https://www.reuters.com/resizer/FHbTyWUpIEEHjF6Q4Bj3Wr_sfUI=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/RPHLJPTHABKZ5KSPOCFJD6KN3Q.jpg",
+            "publishedAt": "2023-06-13T04:21:00Z",
+            "content": "June 12 (Reuters) - The Federal Trade Commission asked a court to temporarily block Microsoft Corp's (MSFT.O) acquisition of Activision Blizzard (ATVI.O) on Monday, seeking to halt the deal from clos… [+2811 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Amy Beth Hanson",
+            "title": "Lawsuit pits young climate change activists against a fossil fuel-friendly state at trial - The Associated Press",
+            "description": "HELENA, Mont. (AP) — Young people challenging Montana officials over inaction on climate change are expected back in state court on Tuesday in a first-of-a kind trial  of a lawsuit that environmentalists hope will spur changes in the fossil fuel-friendly stat…",
+            "url": "https://apnews.com/article/youth-climate-trial-montana-bee4111fe38e2cdda7c1cb4177cd558f",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/18612b3609684743abfcfb64be16424d/2423.webp",
+            "publishedAt": "2023-06-13T04:05:47Z",
+            "content": "HELENA, Mont. (AP) Young people challenging Montana officials over inaction on climate change are expected back in state court on Tuesday in a first-of-a kind trial of a lawsuit that environmentalist… [+4492 chars]"
+        },
+        {
+            "source": {
+                "id": "associated-press",
+                "name": "Associated Press"
+            },
+            "author": "Adam Beam",
+            "title": "California Gov. Newsom spars with Fox News host Hannity over Biden, immigration and the economy - The Associated Press",
+            "description": "SACRAMENTO, Calif. (AP) — California Gov. Gavin Newsom sparred with Fox News host Sean Hannity on Monday night, insisting President Joe Biden is physically fit for a second term as president while refusing to say whether supporters have urged him to run again…",
+            "url": "https://apnews.com/article/california-gavin-newsom-sean-hannity-fox-news-4b2dcfe3f13cf8ff8295740aaf544afb",
+            "urlToImage": "https://storage.googleapis.com/afs-prod/media/64a1085ab2f84a309334cb00951a90ab/3000.webp",
+            "publishedAt": "2023-06-13T03:44:25Z",
+            "content": "SACRAMENTO, Calif. (AP) California Gov. Gavin Newsom sparred with Fox News host Sean Hannity on Monday night, insisting President Joe Biden is physically fit for a second term as president while refu… [+4306 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "SpaceNews"
+            },
+            "author": "Jeff Foust",
+            "title": "SpaceX launches eighth dedicated smallsat rideshare mission - SpaceNews",
+            "description": "A SpaceX Falcon 9 launched several dozen smallsats on a dedicated rideshare mission June 12, with a wide range of customers.",
+            "url": "https://spacenews.com/spacex-launches-eighth-dedicated-smallsat-rideshare-mission/",
+            "urlToImage": "https://spacenews.com/wp-content/uploads/2023/06/transporter8-launch.jpg",
+            "publishedAt": "2023-06-13T03:43:30Z",
+            "content": "NEW YORK A SpaceX Falcon 9 launched several dozen smallsats on a dedicated rideshare mission June 12, with customers ranging from the U.S. Space Force to startups deploying their first satellites.\r\nT… [+3913 chars]"
+        },
+        {
+            "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Eric Bradner,Gregory Krieg",
+            "title": "Takeaways from CNN’s town hall with Chris Christie - CNN",
+            "description": "Former New Jersey Gov. Chris Christie laid into Donald Trump in a CNN town hall Monday night, calling the former president “angry” and “vengeful” and accusing him of “vanity run amok” within the event’s opening minutes.",
+            "url": "https://www.cnn.com/2023/06/12/politics/chris-christie-cnn-town-hall-takeaways/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/230612174809-09-chris-christie-cnn-town-hall-0612.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-06-13T03:25:00Z",
+            "content": "Former New Jersey Gov. Chris Christie laid into Donald Trump in a CNN town hall Monday night, calling the former president angry and vengeful and accusing him of vanity run amok within the events ope… [+10553 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "Damian Priest confronts Finn Bálor: Raw highlights, June 12, 2023 - WWE",
+            "description": "Finn Bálor converses with JD McDonagh before Damian Priest confronts The Prince, asking why he interfered in his match with Seth “Freakin” Rollins last week....",
+            "url": "https://www.youtube.com/watch?v=_t1UNtAt_5E",
+            "urlToImage": "https://i.ytimg.com/vi/_t1UNtAt_5E/maxresdefault.jpg",
+            "publishedAt": "2023-06-13T03:20:00Z",
+            "content": null
+        },
+        {
+            "source": {
+                "id": "al-jazeera-english",
+                "name": "Al Jazeera English"
+            },
+            "author": "Al Jazeera",
+            "title": "Russia-Ukraine war: List of key events, day 475 - Al Jazeera English",
+            "description": "As the war enters it 475th day, these are the main developments.",
+            "url": "https://www.aljazeera.com/news/2023/6/13/russia-ukraine-war-list-of-key-events-day-475",
+            "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2023/06/2023-06-12T180556Z_412255999_RC2SH1A8OG3W_RTRMADP_3_UKRAINE-CRISIS-DAM-KHERSON-REGION-1686624345.jpg?resize=1920%2C1440",
+            "publishedAt": "2023-06-13T03:14:47Z",
+            "content": "This is the situation as it stands on Tuesday, June 12, 2023\r\nFighting\r\n<ul><li>Ukraines President Volodymyr Zelenskyy said his forces were making progress and inflicting losses on Russia amid rain a… [+2686 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "SciTechDaily"
+            },
+            "author": null,
+            "title": "Astronomers Discover BEBOP-1c: Tatooine-Like Exoplanet Orbits Twin Stars in a Multiplanetary System - SciTechDaily",
+            "description": "An international team of astronomers has announced the second-ever discovery of a multiplanetary circumbinary system. Astronomers at the University of Birmingham have discovered a second planet, named BEBOP-1c, in the rare multiplanetary circumbinary system B…",
+            "url": "https://scitechdaily.com/?p=285657",
+            "urlToImage": "https://scitechdaily.com/images/Planet-With-Two-Suns-Illustration.jpg",
+            "publishedAt": "2023-06-13T03:03:38Z",
+            "content": "ByUniversity of BirminghamJune 12, 2023\r\nAn international team of astronomers has announced the discovery of a second planet in a rare multiplanetary circumbinary system, known as BEBOP-1 or TOI-1338… [+8442 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "I-95 Philadelphia collapse: body recovered, delays expected for months | LiveNOW from FOX - LiveNOW from FOX",
+            "description": "Authorities in Philadelphia said a body was recovered from the rubble among the crash and collapse Interstate 95 collapse. Family members have identified the...",
+            "url": "https://www.youtube.com/watch?v=mwIqNbwaFPo",
+            "urlToImage": "https://i.ytimg.com/vi/mwIqNbwaFPo/maxresdefault.jpg",
+            "publishedAt": "2023-06-13T02:56:52Z",
+            "content": null
+        }
+    ]
+}
