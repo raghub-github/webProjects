@@ -19,14 +19,7 @@ export class News extends Component {
       console.log("something is not working");
     }
   }
-  //   async componentDidMount() {
-  //     let url =
-  //       "https://newsapi.org/v2/top-headlines?country=in&apiKey=5cb3f0dcd46f48d094c8e665b620a058";
-  //     let data = await fetch(url);
-  //     let parseData = await data.json();
-  //     console.log(parseData);
-  //     this.setState({ articles: parseData.articles });
-  //   }
+  
   render() {
     return (
       <div className="container my-3 App">
