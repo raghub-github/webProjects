@@ -4,7 +4,7 @@ export class NewsItem extends Component {
   render() {
     let { title, description, imageUrl, newsUrl } = this.props;
     return (
-      <div className="my-3">
+      <div className="my-3 d-flex justify-content-center">
         <div className="card bg-dark" style={{ width: "18rem" }}>
           <img
             src={
@@ -14,7 +14,7 @@ export class NewsItem extends Component {
             }
             className="card-img-top"
             alt="ImageUrl"
-            style={{ height: "220px", width: "100%" }}
+            // style={{ height: "100%", width: "100%" }}
           />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
