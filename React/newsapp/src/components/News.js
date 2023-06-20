@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 export class News extends Component {
   static defaultProps = {
     country: "in",
-    pageSize: 6,
+    pageSize: 12,
     category: "general",
   };
   static propTypes = {
@@ -18,13 +18,15 @@ export class News extends Component {
     super();
     this.state = { articles: [], loading: false, page: 1 };
   }
-  async componentDidMount() {
+
+  async updatePage() {
     try {
-      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5cb3f0dcd46f48d094c8e665b620a058&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+      const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5cb3f0dcd46f48d094c8e665b620a058&page=${this.state.page}&pageSize=${this.props.pageSize}`;
       this.setState({ loading: true });
       const res = await fetch(url);
       const data = await res.json();
-      this.setState({
+      console.log(data);
+      await this.setState({
         articles: data.articles,
         totalResults: data.totalResults,
         loading: false,
@@ -34,44 +36,18 @@ export class News extends Component {
     }
   }
 
-  handlePrivClick = async () => {
-    let url = `https://newsapi.org/v2/top-headlines?country=${
-      this.props.country
-    }&category=${
-      this.props.category
-    }&apiKey=5cb3f0dcd46f48d094c8e665b620a058&page=${
-      this.state.page - 1
-    }&pageSize=${this.props.pageSize}`;
-    this.setState({ loading: true });
-    const res = await fetch(url);
-    const data = await res.json();
-    this.setState({
-      page: this.state.page - 1,
-      articles: data.articles,
-      loading: false,
-    });
-  };
+  async componentDidMount() {
+    await this.updatePage();
+  }
+
   handleNextClick = async () => {
-    if (
-      this.state.page + 1 >
-      !Math.ceil(this.state.totalResults / this.props.pageSize)
-    ) {
-      let url = `https://newsapi.org/v2/top-headlines?country=${
-        this.props.country
-      }&category=${
-        this.props.category
-      }&apiKey=5cb3f0dcd46f48d094c8e665b620a058&page=${
-        this.state.page + 1
-      }&pageSize=${this.props.pageSize}`;
-      this.setState({ loading: true });
-      const res = await fetch(url);
-      const data = await res.json();
-      this.setState({
-        page: this.state.page + 1,
-        articles: data.articles,
-        loading: false,
-      });
-    }
+    await this.setState({ page: this.state.page + 1 });
+    await this.updatePage();
+  };
+
+  handlePrivClick = async () => {
+    await this.setState({ page: this.state.page - 1 });
+    await this.updatePage();
   };
 
   render() {
@@ -100,6 +76,9 @@ export class News extends Component {
                     //   }
                     imageUrl={element.urlToImage}
                     newsUrl={element.url}
+                    author={element.author}
+                    date={element.publishedAt}
+                    source={element.source.name}
                   />
                 </div>
               );
