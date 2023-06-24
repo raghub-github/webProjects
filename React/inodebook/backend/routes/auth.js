@@ -56,7 +56,7 @@ router.post(
   [
     // body("name", "enter a valid name").isLength({ min: 3 }),
     body("email", "enter a valid email").isEmail(),
-    body("password", "Password cannot be empty").exists(),
+    body("password", "Password cannot be empty").notEmpty(),
   ],
   async (req, res) => {
     const errors = validationResult(req);
