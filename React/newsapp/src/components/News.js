@@ -41,17 +41,6 @@ const News = (props) => {
     updatePage();
   }, [props.searchQuery]);
 
-  // useEffect(() => {
-  //   // document.title = `${capitalizeFirstLetter(props.category)} - NewsPlate`;
-  //   updatePage();
-  // }, [props.searchQuery]);
-
-  // async componentDidUpdate(prevProps) {
-  //   if (prevProps.searchQuery !== props.searchQuery) {
-  //     await updatePage();
-  //   }
-  // }
-
   const fetchMoreData = async () => {
     try {
       const url1 = `https://newsapi.org/v2/top-headlines?country=${
@@ -70,14 +59,6 @@ const News = (props) => {
       console.log(e);
     }
   };
-
-  // useEffect((prevProps) => {
-  //   if (prevProps.searchQuery !== props.searchQuery) {
-  //     updatePage();
-  //   }
-  //   // eslint-disable-next-line
-  // }, []);
-
   return (
     <div className="container my-3 App">
       <h2>NewsPlate - Top {capitalizeFirstLetter(props.category)} Headlines</h2>
