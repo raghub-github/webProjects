@@ -19,11 +19,11 @@ const News = (props) => {
     try {
       props.setProgress(10);
       const url1 = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
-      // const url2 = `https://newsapi.org/v2/top-headlines?q=${props.searchQuery}&?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
+      const url2 = `https://newsapi.org/v2/top-headlines?q=${props.searchQuery}&?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page}&pageSize=${props.pageSize}`;
       setLoading(true);
       console.log("hello");
-      // const res = await fetch(!props.searchQuery ? url1 : url2);
-      const res = await fetch(url1);
+      const res = await fetch(!props.searchQuery ? url1 : url2);
+      // const res = await fetch(url1);
       props.setProgress(30);
       const data = await res.json();
       props.setProgress(70);
@@ -39,11 +39,12 @@ const News = (props) => {
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)} - NewsPlate`;
     updatePage();
-  }, [props.category]);
-  useEffect(() => {
-    // document.title = `${capitalizeFirstLetter(props.category)} - NewsPlate`;
-    updatePage();
   }, [props.searchQuery]);
+
+  // useEffect(() => {
+  //   // document.title = `${capitalizeFirstLetter(props.category)} - NewsPlate`;
+  //   updatePage();
+  // }, [props.searchQuery]);
 
   // async componentDidUpdate(prevProps) {
   //   if (prevProps.searchQuery !== props.searchQuery) {
@@ -58,10 +59,10 @@ const News = (props) => {
       }&category=${props.category}&apiKey=${props.apikey}&page=${
         page + 1
       }&pageSize=${props.pageSize}`;
-      // const url2 = `https://newsapi.org/v2/top-headlines?q=${props.searchQuery}&?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page+1}&pageSize=${props.pageSize}`;
-      // const res = await fetch(!props.searchQuery ? url1 : url2);
+      const url2 = `https://newsapi.org/v2/top-headlines?q=${props.searchQuery}&?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page+1}&pageSize=${props.pageSize}`;
+      const res = await fetch(!props.searchQuery ? url1 : url2);
       setPage(page + 1);
-      const res = await fetch(url1);
+      // const res = await fetch(url1);
       const data = await res.json();
       setArticles(articles.concat(data.articles));
       setTotalResults(data.totalResults);

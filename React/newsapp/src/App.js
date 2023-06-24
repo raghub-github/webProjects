@@ -11,13 +11,9 @@ const App = () => {
 
   const handleSearch = (query) => {
     setSearchQuery(query);
+    console.log(query)
   };
   const [progress, setProgress] = useState(0);
-  // setProgress(progress);
-  // const setProgress = (progress) => {
-  //   setProgress(progress)
-  // };
-
   const apikey = process.env.REACT_APP_NEWS_API;
 
   return (
