@@ -37,7 +37,7 @@ const News = (props) => {
   };
 
   useEffect(() => {
-    document.title = `${capitalizeFirstLetter(props.category)} - NewsPlate`;
+    // document.title = `${capitalizeFirstLetter(props.category)} - NewsPlate`;
     updatePage();
   }, [props.searchQuery]);
 

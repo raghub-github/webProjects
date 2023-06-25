@@ -53,7 +53,6 @@ router.post(
 );
 
 //ROUTER 2: Authenticate a user using POST "/api/auth/login", no login required
-
 router.post(
   "/login",
   [
