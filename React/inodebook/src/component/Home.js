@@ -1,10 +1,11 @@
 import React from "react";
+import Notes from "./Notes";
 
 export const Home = () => {
   return (
     <div>
       <div className="container my-3">
-        <h2>Add notes</h2>
+        <h2 className="App">Add notes</h2>
         <form className="my-3">
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
@@ -44,10 +45,8 @@ export const Home = () => {
             Submit
           </button>
         </form>
-        </div>
-        <div className="container my-3">
-          <h2>Your Notes</h2>
-        </div>
+      </div>
+      <Notes />
     </div>
   );
 };
