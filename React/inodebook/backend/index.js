@@ -1,7 +1,7 @@
 const connectToMongo = require("./db");
 const express = require("express");
 const app = express();
-const port = process.env.REACT_APP_BACKEND_PORT || 5000;
+const port = process.env.REACT_APP_HOST || 5000;
 var cors = require("cors");
 
 connectToMongo();
