@@ -3,7 +3,7 @@ import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import InfiniteScroll from "react-infinite-scroll-component";
-
+      
 const News = (props) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -43,12 +43,10 @@ const News = (props) => {
 
   const fetchMoreData = async () => {
     try {
-      const url1 = `https://newsapi.org/v2/top-headlines?country=${
-        props.country
-      }&category=${props.category}&apiKey=${props.apikey}&page=${
-        page + 1
-      }&pageSize=${props.pageSize}`;
-      const url2 = `https://newsapi.org/v2/top-headlines?q=${props.searchQuery}&?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page+1}&pageSize=${props.pageSize}`;
+      const url1 = `https://newsapi.org/v2/top-headlines?country=${props.country
+        }&category=${props.category}&apiKey=${props.apikey}&page=${page + 1
+        }&pageSize=${props.pageSize}`;
+      const url2 = `https://newsapi.org/v2/top-headlines?q=${props.searchQuery}&?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page + 1}&pageSize=${props.pageSize}`;
       const res = await fetch(!props.searchQuery ? url1 : url2);
       setPage(page + 1);
       // const res = await fetch(url1);
