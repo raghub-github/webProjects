@@ -64,10 +64,10 @@ const getAllProducts = async (req, res) => {
         apiData = apiData.select(selectFix);
     }
 
-    // let page = Number(req.query.page) || 1;
-    // let limit = Number(req.query.limit) || 12;
-    // let skip = (page - 1) * limit;
-    // apiData = apiData.skip(skip).limit(limit);
+    let page = Number(req.query.page) || 1;
+    let limit = Number(req.query.limit) || 30;
+    let skip = (page - 1) * limit;
+    apiData = apiData.skip(skip).limit(limit);
 
     const jsondata = await apiData;
     res.status(200).json(jsondata);
