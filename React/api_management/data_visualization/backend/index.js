@@ -8,10 +8,10 @@ var cors = require("cors");
 connectToMongo();
 app.use(cors());
 app.use(express.json());
-app.use("/api/auth", require("./routes/auth"));
-app.use("/api/carts", require("./routes/carts"));
-app.use("/api/products", require("./routes/carts"));
+app.use("/jsondata", require("./routes/carts"));
+// app.use("/api/carts", require("./routes/carts"));
+// app.use("/api/products", require("./routes/carts"));
 
 app.listen(port, () => {
-  console.log(`eComApp backend listening on port http://localhost:${port}`);
+  console.log(`API backend listening on port http://localhost:${port}`);
 });

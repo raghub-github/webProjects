@@ -20,5 +20,5 @@ const UserSchema = new mongoose.Schema({
     likelihood: { type: Number },
 });
 
-const user = mongoose.model("user", UserSchema);
-module.exports = user;
+const data = mongoose.model("jsondata", UserSchema);
+module.exports = data;

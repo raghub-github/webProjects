@@ -1,6 +1,6 @@
 require('dotenv').config();
 const connectToMongo = require("./db");
-const product = require('./models/products');
+const product = require('./models/data');
 const productJSON = require('./products.json');
 
 const start = async () => {
@@ -10,7 +10,7 @@ const start = async () => {
         await product.create(productJSON);
         console.log("db created successfully");
     } catch (error) {
-        console.log(error.message);
+        console.log("DB Not Created !",error.message);
     }
 }
 start();
