@@ -8,6 +8,11 @@ In the project directory, you can run:
 
 ### `npm start`
 
+Also enter the backend(`cd backend`) file to sertve the PAI 
+### `nodemon index.js` for connect with mongodb server
+### `nodemon productDB.js` for serve the json file to mongodb database
+(Replace the mongoURI with your own MongoDB URI and HOST in the .env file in backend folder, PORT=3001 for API host )
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 

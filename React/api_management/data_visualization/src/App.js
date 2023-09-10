@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // You can add your CSS styling here
+import './App.css'; 
 import FilterPanel from './components/FilterPanel';
 import DataVisualization from './components/DataVisualization';
 
@@ -23,7 +23,6 @@ function App() {
     async function fetchData() {
       try {
         const response = await fetch('http://localhost:3001/jsondata');
-        // console.log("topic",response.json());
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
@@ -31,7 +30,7 @@ function App() {
       }
     }
     fetchData();
-  }, []);
+  }, [filters]);
 
   // Handle filter changes
   const handleFilterChange = (filterName, filterValue) => {
