@@ -4,9 +4,11 @@ const app = express();
 const PORT = 5000;
 const router = require('./router/auth_router');
 const connectDB = require('./utils/db');
+const errorMiddleware = require("./middlewares/error_middleware");
 
 app.use(express.json());
 app.use('/api/auth', router);
+app.use(errorMiddleware);
 
 connectDB().then(() => {
     app.listen(PORT, () => {
