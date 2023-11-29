@@ -1,19 +1,18 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Contact } from "./components/Contact";
-import { Register } from "./components/Register";
-import { Login } from "./components/Login";
-import { Services } from "./components/Services";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Navbar } from "./components/Navbar";
+import { Contact } from "./pages/Contact";
+import { Register } from "./pages/Register";
+import { Login } from "./pages/Login";
+import { Services } from "./pages/Services";
 import "./App.css";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
