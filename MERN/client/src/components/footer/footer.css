@@ -1,0 +1,6 @@
+footer{
+    text-align:  center;
+    background-color: var(--btn-color);
+    padding: 3.2rem;
+    margin-top: auto;
+}
