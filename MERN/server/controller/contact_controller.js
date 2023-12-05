@@ -10,4 +10,4 @@ const contactForm = async (req, res) => {
     }
 };
 
-module.exports = {contactForm};
+module.exports = { contactForm };
