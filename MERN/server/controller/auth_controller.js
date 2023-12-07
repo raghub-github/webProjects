@@ -49,4 +49,13 @@ const login = async (req, res) => {
     }
 };
 
-module.exports = { home, register, login };
+const user = async (req, res) => {
+    try {
+        const userData = req.user;
+        return res.status(200).json({msg:userData});
+    } catch (error) {
+        console.log("Internal server error to getting user data form database", error);
+    }
+}
+
+module.exports = { home, register, login, user };
