@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const URL = "http://localhost:5000/api/auth/register";
 import { useAuth } from "../store/auth";
+import { toast } from "react-toastify";
 
 export const Register = () => {
   const [user, setUser] = useState({
@@ -13,7 +14,7 @@ export const Register = () => {
 
   const navigate = useNavigate();
 
-  const {storeTokenInLS} = useAuth();
+  const { storeTokenInLS } = useAuth();
 
   const handleInput = (e) => {
     console.log(e);
@@ -35,13 +36,15 @@ export const Register = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
       });
+      const res_data = await response.json();
       if (response.ok) {
-        const res_data = await response.json();
-        storeTokenInLS(res_data)
+        storeTokenInLS(res_data);
         setUser({ username: "", email: "", phone: "", password: "" });
+        toast.success("Registration successful");
         navigate("/login");
+      } else {
+        toast.error(`${res_data.extraDetails ? res_data.extraDetails : res_data.message}`);
       }
-      console.log(response);
     } catch (error) {
       console.log("Registration", error);
     }

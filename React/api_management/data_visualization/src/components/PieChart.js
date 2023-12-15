@@ -6,7 +6,6 @@ function PieChart({ data }) {
 
     useEffect(() => {
         if (data.length === 0) return;
-        // console.log("data", data);
         const chartData = {
             labels: data.map((item) =>  item.country),
             datasets: [
@@ -35,7 +34,6 @@ function PieChart({ data }) {
 
         const ctx = chartRef.current.getContext('2d');
 
-        // Ensure the previous chart is destroyed before creating a new one
         if (chartRef.current.chart) {
             chartRef.current.chart.destroy();
         }

@@ -1,7 +1,6 @@
 import React from 'react';
 
 function FilterPanel({ filters, onFilterChange }) {
-  // Handle filter changes
   const handleFilterChange = (event) => {
     const { name, value } = event.target;
     onFilterChange(name, value);
@@ -31,7 +30,6 @@ function FilterPanel({ filters, onFilterChange }) {
           onChange={handleFilterChange}
           multiple
         >
-          {/* Populate with available topics */}
           <option value="Gas">Gas</option>
           <option value="Oil">Oil</option>
           <option value="Market">Market</option>

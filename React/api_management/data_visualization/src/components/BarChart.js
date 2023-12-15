@@ -8,7 +8,7 @@ function BarChart({ data }) {
     useEffect(() => {
         if (data.length === 0) return;
         const chartData = {
-            labels: data.map((item) => item.sector),
+            labels: data.map((item) =>  item.sector),
             datasets: [
                 {
                     label: 'Values',
@@ -30,14 +30,14 @@ function BarChart({ data }) {
                         'rgba(255, 159, 64, 1)',
                     ],
                     borderWidth: 1,
+                    barThickness: 'flex',
                 },
             ],
         };
 
         const ctx = chartRef.current.getContext('2d');
-        // Check if a chart instance already exists
         if (chartRef.current.chart) {
-            chartRef.current.chart.destroy(); // Destroy the existing chart
+            chartRef.current.chart.destroy(); 
         }
         chartRef.current.chart = new Chart(ctx, {
             type: 'bar',
@@ -45,7 +45,7 @@ function BarChart({ data }) {
             options: {
                 scales: {
                     x: {
-                        type: 'category', // Use 'category' scale for the X-axis
+                        type: 'category',
                         title: {
                             display: true,
                             text: 'X-Axis Label',
@@ -62,7 +62,7 @@ function BarChart({ data }) {
                 plugins: {
                     legend: {
                         display: true,
-                        position: 'top', // Change the legend position if needed
+                        position: 'top', 
                     },
                     title: {
                         display: true,
@@ -70,15 +70,15 @@ function BarChart({ data }) {
                         fontSize: 18,
                     },
                 },
-                responsive: true, // Enable responsiveness
-                maintainAspectRatio: false, // Adjust aspect ratio as needed
+                responsive: true, 
+                maintainAspectRatio: false, 
             },
         });
     }, [data]);
 
     return (
-        <div className="bar-chart">
-            <canvas ref={chartRef}></canvas>
+        <div className="bar-chart ">
+            <canvas  style={{height:"100%", width:"100%"}} ref={chartRef}></canvas>
         </div>
     );
 }

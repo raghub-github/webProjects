@@ -1,4 +1,3 @@
-// LineChart.js
 import React, { useEffect, useRef } from 'react';
 import { Chart } from 'chart.js';
 
@@ -22,7 +21,6 @@ function LineChart({ data }) {
         };
 
         const ctx = chartRef.current.getContext('2d');
-        // Check if a chart instance already exists
         if (chartRef.current.chart) {
             chartRef.current.chart.destroy(); // Destroy the existing chart
         }

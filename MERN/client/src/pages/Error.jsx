@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
+// import { toast } from "react-toastify";
 
 export const Error = () => {
+  // toast.error("Sorry! Page not found");
   return (
     <>
       <section id="error-page">

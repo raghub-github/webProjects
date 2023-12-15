@@ -33,13 +33,13 @@ function DataVisualization({ data, filters }) {
   });
 
   return (
-    <div className="data-visualization m-5 p-3 App " style={{backgroundColor:"#ededff"}}>
-      <h2>Data Visualization</h2>
+    <div className="data-visualization m-5 p-3 App" style={{ backgroundColor: "#ededff", borderRadius: "10px", boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)" }}>
+      <h2 className="text-center mb-4">Data Visualization</h2>
       <div className="row">
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Bar Chart</h5>
+              <h5 className="card-title text-center">Bar Chart</h5>
               <BarChart data={filteredData} />
             </div>
           </div>
@@ -47,7 +47,7 @@ function DataVisualization({ data, filters }) {
         <div className="col-md-6">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Pie Chart</h5>
+              <h5 className="card-title text-center">Pie Chart</h5>
               <PieChart data={filteredData} />
             </div>
           </div>
@@ -57,7 +57,7 @@ function DataVisualization({ data, filters }) {
         <div className="col-md-12">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title">Line Chart</h5>
+              <h5 className="card-title text-center">Line Chart</h5>
               <LineChart data={filteredData} />
             </div>
           </div>

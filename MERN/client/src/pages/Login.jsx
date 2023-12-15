@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const URL = "http://localhost:5000/api/auth/login";
 import { useAuth } from "../store/auth";
+import { toast } from "react-toastify";
 
 export const Login = () => {
   const [user, setUser] = useState({
@@ -10,7 +11,7 @@ export const Login = () => {
   });
 
   const navigate = useNavigate();
-  const {storeTokenInLS} = useAuth();
+  const { storeTokenInLS } = useAuth();
 
   const handleInput = (e) => {
     const name = e.target.name;
@@ -26,16 +27,17 @@ export const Login = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
       });
+      const res_data = await response.json();
       if (response.ok) {
-        const res_data = await response.json();
-        storeTokenInLS(res_data)
-        alert("Login successful");
+        storeTokenInLS(res_data);
+        toast.success("Login Successful");
         setUser({ email: "", password: "" });
         navigate("/");
-      }else{
-        alert("Login failed");
+      } else if (!response.ok) {
+        toast.error(
+          `${res_data.extraDetails ? res_data.extraDetails : res_data.message}`
+        );
       }
-      console.log("Login",response);
     } catch (error) {
       console.log("Login", error);
     }

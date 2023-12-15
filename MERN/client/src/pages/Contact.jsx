@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../store/auth";
+import { toast } from "react-toastify";
 const defauldContactFormData = {
   username: "",
   email: "",
@@ -34,11 +35,12 @@ export const Contact = () => {
         },
         body: JSON.stringify(contact),
       });
+      const data = await response.json();
       if (response.ok) {
         setContact(defauldContactFormData);
-        const data = await response.json();
-        console.log("data",data);
-        alert("Message send successfully")
+        toast.success("Message send successfully")
+      }else{
+        toast.error(`${data.extraDetails ? data.extraDetails : data.message}`)
       }
     } catch (error) {
       console.log(error);

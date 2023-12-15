@@ -10,7 +10,7 @@ const start = async () => {
         await product.create(productJSON);
         console.log("db created successfully");
     } catch (error) {
-        console.log("DB Not Created !",error.message);
+        console.log("DB Not Created !", error.message);
     }
 }
 start();
