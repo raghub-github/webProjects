@@ -41,7 +41,7 @@ export const Register = () => {
         storeTokenInLS(res_data);
         setUser({ username: "", email: "", phone: "", password: "" });
         toast.success("Registration successful");
-        navigate("/login");
+        navigate("/");
       } else {
         toast.error(`${res_data.extraDetails ? res_data.extraDetails : res_data.message}`);
       }
