@@ -5,6 +5,7 @@ const PORT = 5000;
 const authRoute = require('./router/auth_router');
 const contactRoute = require('./router/contact_router');
 const serviceRoute = require('./router/service_router');
+const adminRoute = require('./router/admin_router');
 const connectDB = require('./utils/db');
 const errorMiddleware = require("./middlewares/error_middleware");
 const cors = require('cors')
@@ -20,6 +21,7 @@ app.use(express.json());
 app.use('/api/auth', authRoute);
 app.use('/api/form', contactRoute);
 app.use('/api/data', serviceRoute);
+app.use('/api/admin', adminRoute);
 app.use(errorMiddleware);
 
 connectDB().then(() => {
