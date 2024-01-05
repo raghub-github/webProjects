@@ -13,6 +13,7 @@ import "./App.css";
 import {AdminLayout} from "./components/layouts/Admin_layout";
 import {AdminContacts} from "./pages/Admin_contacts";
 import { AdminUsers } from "./pages/Admin_users";
+import { Edit } from "./pages/Admin_adit";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="*" element={<Error />} />
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="users" element={<AdminUsers/>}/>
+            <Route path="users/update/:id" element={<Edit/>}/>
             <Route path="contacts" element={<AdminContacts/>}/>
           </Route>
         </Routes>

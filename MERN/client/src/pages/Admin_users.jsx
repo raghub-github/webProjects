@@ -44,8 +44,8 @@ export const AdminUsers = () => {
 
   return (
     <section className="admin-users-section">
-      <div className="container">
-        <h2>Admin Users Data</h2>
+      <div className="contact-content container">
+        <h1 className="main-heading">Users Data List</h1>
       </div>
       <div className="container admin-users">
         <table>
@@ -65,7 +65,7 @@ export const AdminUsers = () => {
                   <td>{user.username}</td>
                   <td>{user.email}</td>
                   <td>{user.phone}</td>
-                  <td><Link to={`/admin/users/${user._id}/edit`}>Edit</Link></td>
+                  <td><Link to={`/admin/users/update/${user._id}`}>Edit</Link></td>
                   <td>
                     <button onClick={() => deleteUser(user._id)}>Delete</button>
                   </td>

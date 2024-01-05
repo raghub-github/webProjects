@@ -7,12 +7,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [user, setUser] = useState("");
   const [services, setServices] = useState([]);
-  const authorizationToken = `Bearer ${token}`
-
-  const storeTokenInLS = (serverToken) => {
-    setToken(serverToken);
-    return localStorage.setItem("token", serverToken.token);
-  };
+  const authorizationToken = `Bearer ${token}`;
 
   let isLoggedIn = !!token;
 
@@ -39,7 +34,13 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Authentication
+  const storeTokenInLS = (serverToken) => {
+    setToken(serverToken);
+    userAuthentication();
+    return localStorage.setItem("token", serverToken.token);
+  };
+
+  // Service Callbacks
   const getServices = async () => {
     try {
       const response = await fetch("http://localhost:5000/api/data/service", {
@@ -57,12 +58,19 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     getServices();
     userAuthentication();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
   }, []);
 
   return (
     <AuthContext.Provider
-      value={{ isLoggedIn, storeTokenInLS, LogoutUser, user, services, authorizationToken }}
+      value={{
+        isLoggedIn,
+        storeTokenInLS,
+        LogoutUser,
+        user,
+        services,
+        authorizationToken,
+      }}
     >
       {children}
     </AuthContext.Provider>

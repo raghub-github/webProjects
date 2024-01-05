@@ -59,7 +59,7 @@ export const Login = () => {
               </div>
               {/* our main registration code  */}
               <div className="registration-form">
-                <h1 className="main-heading mb-3">Login form</h1>
+                <h1 className="main-heading mb-3">Login to continue</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
                   <div>
@@ -90,7 +90,7 @@ export const Login = () => {
                   </div>
                   <br />
                   <button type="submit" className="btn btn-submit">
-                    Register Now
+                    Log in
                   </button>
                 </form>
               </div>

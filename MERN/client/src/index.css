@@ -462,8 +462,9 @@ td {
   letter-spacing: 0.1rem;
   padding: 3rem;
   text-align: center;
+  justify-content: center;
   color: var(--dark-color);
-  width: 30rem;
+  width: 26rem;
 }
 
 table {
