@@ -1,9 +1,14 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import { useAuth } from "../store/auth";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
-  const { isLoggedIn, user } = useAuth();
+  const { isLoggedIn, user, isLoading } = useAuth();
+  const [isAdmin, setIsAdmin] = useState(false);
+  useEffect(() => {
+    setIsAdmin(user.isAdmin);
+  },[isLoading, user])
 
   return (
     <>
@@ -40,9 +45,9 @@ export const Navbar = () => {
                   </li>
                 </>
               )}
-              {user && user.isAdmin && (
+              {!isLoading && isAdmin && (
                 <li>
-                  <NavLink to="/admin">Admin Panel</NavLink>
+                  <NavLink to="/admin">Admin</NavLink>
                 </li>
               )}
             </ul>

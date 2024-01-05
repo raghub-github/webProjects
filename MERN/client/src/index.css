@@ -455,6 +455,10 @@ th{
   box-shadow: 0 0.3rem 0 gray;
   margin-bottom: 10px;
   text-transform: capitalize;
+
+  /* &:nth-child(4){
+    margin-left: 15rem;
+  } */
 }
 
 td {
@@ -465,6 +469,9 @@ td {
   justify-content: center;
   color: var(--dark-color);
   width: 26rem;
+  /* &:nth-child(4){
+    margin-left: 8rem;
+  } */
 }
 
 table {
