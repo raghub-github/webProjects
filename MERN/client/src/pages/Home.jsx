@@ -1,7 +1,19 @@
+// import { useState } from "react";
+// import Callback from "./Callback";
+
 export const Home = () => {
+  // const [color, setcolor] = useState("");
+
+  // const UIcolor = (color) => {
+  //   setcolor(color);
+  //   console.log(color);
+  // };
+
   return (
     <>
       <main>
+        {/* <div className="container" style={{ backgroundColor: `${ color }` }}></div>
+        <Callback UIcolor={UIcolor} /> */}
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
@@ -75,7 +87,9 @@ export const Home = () => {
             </p>
             <div className="btn btn-group">
               <a href="/services">
-                <button className="btn secondary-btn secondary-btn-next">learn more</button>
+                <button className="btn secondary-btn secondary-btn-next">
+                  learn more
+                </button>
               </a>
               <a href="/contact">
                 <button className="btn">connect now</button>

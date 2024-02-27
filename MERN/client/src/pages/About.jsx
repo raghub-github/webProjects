@@ -55,7 +55,6 @@ export const About = () => {
           </div>
         </section>
       </main>
-
       <Analytics />
     </>
   );

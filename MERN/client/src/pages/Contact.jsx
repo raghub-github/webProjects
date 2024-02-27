@@ -6,6 +6,7 @@ const defauldContactFormData = {
   email: "",
   message: "",
 };
+
 export const Contact = () => {
   const [contact, setContact] = useState(defauldContactFormData);
   const { user } = useAuth();
