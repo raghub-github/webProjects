@@ -13,7 +13,7 @@ export function InputWithButton() {
           type="email"
           value={email}
           onChange={onChange}
-          className="max-w-[300px] border-black rounded h-12 pr-20"
+          className="max-w-[300px] border-black rounded h-[48px] pr-20"
           containerProps={{
             className: "min-w-0",
           }}
