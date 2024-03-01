@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Product Title 1",
+        "rating": 4.5,
+        "description": "This is a description of product 1.",
+        "price": "$19.99",
+        "image": "http://placehold.it/"
+    },
+    {
+        "title": "Product Title 2",
+        "rating": 4.8,
+        "description": "This is a description of product 2.",
+        "price": "$24.99",
+        "image": "http://placehold.it/"
+    },
+    {
+        "title": "Product Title 1",
+        "rating": 4.5,
+        "description": "This is a description of product 1.",
+        "price": "$19.99",
+        "image": "http://placehold.it/"
+    },
+    {
+        "title": "Product Title 2",
+        "rating": 4.8,
+        "description": "This is a description of product 2.",
+        "price": "$24.99",
+        "image": "http://placehold.it/"
+    }
+]
