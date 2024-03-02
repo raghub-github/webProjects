@@ -5,17 +5,17 @@ import { FaStarHalfAlt } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa6";
 
-const ProductCard = ({ products }) => {
+const Grid = ({ products }) => {
   return (
     <div className="section p-4">
       <div className="container max-w-5xl mx-auto grid mb-5">
         {products.map((curElem, index) => {
-          const { name, title, rating, price, description } = curElem;
+          const { name, title, rating, description } = curElem;
           return (
             <div key={index} className="card grid mb-12 grid-cols-1 md:grid-cols-3 transition-all ">
               <figure className="relative overflow-hidden md:w-40 md:self-center">
                 <div className="text-left">{index + 1}</div>
-                <img src={images} alt={price} className="h-32" />
+                <img src={images} alt={name} className="h-32" />
                 <p className="mt-2 text-sm">{name}</p>
               </figure>
 
@@ -49,4 +49,4 @@ const ProductCard = ({ products }) => {
   );
 };
 
-export default ProductCard;
+export default Grid;
