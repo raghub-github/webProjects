@@ -4,7 +4,7 @@ const path = require("path");
 // console.log(__filename)
 // console.log(path)
 
-const filePath = path.join("folder", "students","data.txt");
+const filePath = path.join("folder", "students", "data.txt");
 console.log(filePath)
 
 const parseData = path.parse(filePath);
