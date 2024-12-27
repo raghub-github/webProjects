@@ -15,3 +15,6 @@ const updatefile = fs.appendFileSync(filepath, ' Updated', 'utf-8');
 
 // Delete the file
 const deletefile = fs.unlinkSync(filepath);
+
+// Rename the file
+const renamefile = fs.renameSync(filepath, 'newfile.txt');
