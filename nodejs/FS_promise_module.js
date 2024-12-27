@@ -1,4 +1,5 @@
 const fs = require('fs').promises;
+const { error } = require('console');
 const path = require('path');
 
 const filepath = path.join(__dirname, 'PromiseText.txt');
@@ -6,7 +7,7 @@ const filepath = path.join(__dirname, 'PromiseText.txt');
 // Create a file
 fs.writeFile(filepath, 'Hello from Node.js', 'utf-8')
     .then(() => console.log('File created'))
-    .catch((err) => console.log(err));
+    .catch((err) => console.log(err));       
 
 // Read the file
 fs.readFile(filepath, 'utf8')
