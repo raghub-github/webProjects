@@ -4,6 +4,9 @@ const path = require('path');
 
 const filepath = path.join(__dirname, 'PromiseText.txt');
 
+// Read the directory
+fs.readdir(__dirname).then((data) => console.log(data)).catch((err) => console.log(err));
+
 // Create a file
 fs.writeFile(filepath, 'Hello from Node.js', 'utf-8')
     .then(() => console.log('File created'))
