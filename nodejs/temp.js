@@ -3,8 +3,6 @@
 //     console.log(test.xyz);
 // }
 
-const { log } = require("node:console");
-
 // test();
 // test.xyz = 200;
 // test.xyz = 400;
@@ -112,6 +110,41 @@ const { log } = require("node:console");
 // console.log(obj1);
 
 
-for (i='A'.charCodeAt(0); i<='Z'.charCodeAt(0); i++){
-    console.log(String.fromCharCode(i));    
-}
+// for (i='A'.charCodeAt(0); i<='Z'.charCodeAt(0); i++){
+//     console.log(String.fromCharCode(i), i);
+// }
+
+
+// Hexadecimal color representation
+// const randomColor = ()=>{
+//     return `#${Math.random().toString(16).slice(2,8).padEnd(6,0)}`;
+// }
+
+// log(randomColor());
+
+
+// remove the duplicate characters from a array
+// const arr = [1,5,6,6,1,7,8,8,9,10,5,11]
+// const characterList = ['a', 'b', 'c', 'd','e', 'f', 'g', 'h', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l'];
+
+// const uniqueArray = (arr) =>{
+//     return [...new Set(arr)];
+// }
+
+// console.log(uniqueArray(arr));
+// console.log(uniqueArray(characterList));
+
+
+// conditional function
+// if (0.1 + 0.2 === 0.3) {
+//     console.log("True");
+// } else {
+//     console.log("False");
+// }
+
+// console.log(0.1 + 0.2 );
+
+
+// Nested arrays
+const arr = [1,2,3,[4,5,6,[7,8,9,[10,11,12]]]];
+console.log(arr.flat(Infinity));

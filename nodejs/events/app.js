@@ -2,8 +2,8 @@
 const EventEmitter = require('events');
 const emmitter = new EventEmitter();
 
-emmitter.on('greet', () => {
-    console.log('Hello World');
+emmitter.on('greet', (name) => {
+    console.log(`Hello ${name}`);
 });
 
-emmitter.emit('greet');
+emmitter.emit('greet', 'Raghu');
