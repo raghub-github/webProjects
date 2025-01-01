@@ -7,9 +7,9 @@ const server = http.createServer((req, res) => {
         res.write('Hello World');
         res.end();
     }
-    if (req.url === '/offer') {
+    if (req.url === '/edit') {
         res.setHeader('Content-Type', 'text/html');
-        res.write('<h1> New Offer </h1>');
+        res.write('<h1 contenteditable="true"> Edit Here </h1>');
         res.end();
     }
 });
