@@ -14,7 +14,6 @@ const getJoke = () => {
             console.log(chalk.red(joke.punchline));
         });
     });
- 
 }
 
 getJoke();
