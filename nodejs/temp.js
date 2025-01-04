@@ -146,5 +146,113 @@
 
 
 // Nested arrays
-const arr = [1,2,3,[4,5,6,[7,8,9,[10,11,12]]]];
-console.log(arr.flat(Infinity));
+// const arr = [1,2,3,[4,5,6,[7,8,9,[10,11,12]]]];
+// console.log(arr.flat(Infinity));
+
+// Find empty object
+// const findEmptyObject = (obj) => {return Object.keys(obj).length === 0;};
+// console.log(findEmptyObject({}));
+// console.log(findEmptyObject({a:1}));
+// console.log(findEmptyObject({a:undefined}));
+// console.log(findEmptyObject({a:null}));
+
+// Alternative way to find empty object
+// const findEmptyObject = (obj) => {return JSON.stringify(obj) === '{}';};
+// console.log(findEmptyObject({}));
+// console.log(findEmptyObject({a:1}));
+// console.log(findEmptyObject({a:undefined}));
+// console.log(findEmptyObject({a:null}));
+
+// Find empty array
+// const findEmptyArray = (arr) => {return arr.length === 0;};
+// console.log(findEmptyArray([]));   
+// console.log(findEmptyArray([1]));
+
+// Array to objects
+// const arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'];
+// const obj = arr.reduce((acc, val, index) => {
+//     acc[index+1] = val;
+//     return acc;
+// }, {});
+// const obj = Object.fromEntries(arr.map((val, index) => [index+1, val]));
+// console.log(obj);
+
+// Object to arrays
+// const obj1 = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10: 'j'};
+// const entries = Object.entries(obj1);
+// const arr1 = Object.values(obj1);
+// const keys = Object.keys(obj1);
+// const gwpn = Object.getOwnPropertyNames(obj1)
+// console.log(gwpn);
+// console.log(entries);
+// console.log(entries.flat(Infinity));
+// console.log(arr1);
+// console.log(keys);
+
+// let obj = {
+//     name: "Alice",
+//     age: 25,
+//     greet() {
+//       console.log("Hello!");
+//     }
+//   };
+  
+//   // Accessing properties
+//   console.log(obj.name);          // "Alice"
+//   console.log(obj['age']);        // 25
+  
+//   // Adding properties
+//   obj.job = "Developer";
+//   console.log(obj);
+  
+//   // Iterating over properties
+//   for (let key in obj) {
+//     console.log(`${key}: ${obj[key]}`);
+//   }
+  
+//   // Checking property existence
+//   console.log(obj.hasOwnProperty("age")); // true
+
+
+// Find the days difference between two dates
+// const date1 = new Date('2021-01-01');
+// const date2 = new Date('2021-12-31');
+// // const diffTime = Math.abs(date2 - date1); // returns in milliseconds
+// const daysDiff = (d1, d2) => {
+//     return Math.ceil(Math.abs(d1 - d2) / (1000 * 60 * 60 * 24));    
+// }
+// console.log(daysDiff(date1, date2)); 
+
+// Age and date calculation from date of birth
+// function calculateAgeWithDays(birthDate) {
+//     const today = new Date();
+//     const birth = new Date(birthDate);
+  
+//     // Age in years
+//     let ageInYears = today.getFullYear() - birth.getFullYear();
+  
+//     // Adjust age if birthday hasn't occurred yet this year
+//     const hasBirthdayPassed = today.getMonth() > birth.getMonth() ||
+//       (today.getMonth() === birth.getMonth() && today.getDate() >= birth.getDate());
+  
+//     if (!hasBirthdayPassed) {
+//       ageInYears--;
+//     }
+  
+//     // Most recent birthday date
+//     const lastBirthday = new Date(today.getFullYear(), birth.getMonth(), birth.getDate());
+//     if (!hasBirthdayPassed) {
+//       lastBirthday.setFullYear(today.getFullYear() - 1);
+//     }
+  
+//     // Days since the last birthday
+//     const diffTime = today - lastBirthday; // Milliseconds since last birthday
+//     const daysSinceBirthday = Math.floor(diffTime / (1000 * 60 * 60 * 24)); // Convert ms to days
+  
+//     return `${ageInYears} years ${daysSinceBirthday} days`;
+//   }
+  
+//   const ageDetails = calculateAgeWithDays("2000-06-16");
+//   console.log(`Age: ${ageDetails}`); 
+
+
