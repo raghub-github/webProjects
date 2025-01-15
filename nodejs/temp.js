@@ -254,5 +254,3 @@
   
 //   const ageDetails = calculateAgeWithDays("2000-06-16");
 //   console.log(`Age: ${ageDetails}`); 
-
-

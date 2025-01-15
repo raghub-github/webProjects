@@ -37,3 +37,10 @@ const validCardNumber = (str) => {
 
 console.log(validCardNumber("4539 1488 0343 6467")); // true
 console.log(validCardNumber("6485 8975 6402 0229")); // false
+
+
+// Array of String to Number and Array of Number to String
+// const arr = ['45', '64', '78', '99', '01', '91'];
+// const arr2 = [45, 64, 78, 99, 1, 0, 91]
+// console.log(arr.map(Number));
+// console.log(arr2.map(String));
