@@ -1,5 +1,5 @@
 {
-  "name": "hello-prisma",
+  "name": "prisma_mongodb",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
